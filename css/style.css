@@ -1,0 +1,126 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+/* -------------------------------------------------------------HEDER---------------------------- */
+.header{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,.05);
+    background: #ED7200;
+    /* border-top-left-radius:0px 0px;
+    border-top-right-radius:0px 0px;
+    border-bottom-right-radius:40px 20px;
+    border-bottom-left-radius:40px 20px; */
+    border-radius:0px 0px 400px 400px/ 20px 20px ;
+}
+.content{
+    margin: 0 ;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 1200px;
+    overflow: hidden;
+}
+.content_left a img{
+    width: 130px;
+}
+.content_middle nav{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav a{
+    color: #fff;
+}
+.nav a:hover{
+    width: 80px;
+    border-radius: 15px;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    color: #fff;
+}
+.content_right{
+    display: inline-block;
+    color: white;
+}
+/* ---------------------------------------------------------------main---------------------- */
+.main_01{
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.main_01 img{
+    width: 130px;
+}
+.main_01 .DamSen{
+    /* font-family: iCiel Koni; */
+    display: inline-block;
+    font-size: 50px;
+    font-weight: 500;
+}
+.kkc_01 img{
+    display: inline;
+    position: relative;
+    top: -100px;
+    left: 500px;
+    width: 120px;
+}
+.kkc_02 img{
+    display: inline;
+    position: relative;
+    top: -340px;
+    left: 700px;
+    width: 90px;
+}
+.bonduanho img{
+    display: inline-block;
+    position: relative;
+    top: -440px;
+    left: 750px;
+    width: 430px;
+}
+.nhotochong img{
+    display: inline-block;
+    position: relative;
+    top: -400px;
+    left: 35px;
+    width: 200px;
+}
+.kkc_03 img{
+    display: inline-block;
+    position: relative;
+    top: -850px;
+    left: 20px;
+    width: 100px;
+}
+.kkc_04 img{
+    display: inline-block;
+    position: relative;
+    top: -650px;
+    left: 400px;
+    width: 100px;
+}
+.kkc_05 img{
+    
+    position: relative;
+    top: -850px;
+    left: 1100px;
+    width: 100px;
+}
+.kkc_06 img{
+    display: inline-block;
+    position: relative;
+    top: -1250px;
+    left: 1259px;
+    width: 100px;
+}
