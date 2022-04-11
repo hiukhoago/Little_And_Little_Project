@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css"/>
+</head>
+<body class ="body">
+    <header class = "header">
+        <div class="header_left">
+            <a href="/">
+                <img src="./img/Logo.png">
+            </a>
+        </div>
+        <div class="header_middle">
+            <nav class="nav">
+                <div class="item "><a href="./Home.html">Trang chủ</a></div>
+                <div class="item"><a href="./Event.html">Sự kiện</a></div>
+                <div class="item"><a href="./Contact.html">Liên hệ</a></div>
+            </nav>
+        </div>
+        <div class="header_right">
+            <span class="icon-search"><i class="fa fa-phone" aria-hidden="true"></i> 0123456789</span>
+        </div>
+    </header>
+    <main class ="main">
+        <div class="background">
+            <img class="text-thanhtoan" src="./img/text-thanhtoan.png">
+            <img class="nhotocvang" src="./img/NhoTocVang.png">
+            <div class = "content">
+                <img class="bang1" src="./img/bang1.png">
+                <img class="khungnoi" src="./img/khungnoi.png">
+                <img class="bang2" src="./img/bang2.png">
+                <img class="thongtinthanhtoan" src="./img/thongtinthanhtoan.png">
+                <img class="vecong-vegiadinh" src="./img/vecong-vegiadinh.png">
+                
+                <form class="formthanhtoan">
+                    <div class=" group1">
+                        <label>Số thẻ</label>
+                        <input class="sothe" type="text" placeholder="  012458963257458">
+                    </div>
+                    <div class=" group2">
+                        <label>Họ tên chủ thẻ</label>
+                        <input class="hotenchuthe" type="text" placeholder="  Trần Hiếu Khoa">
+                    </div>
+                    <div class="group3">
+                        <label>Ngày hết hạn</label>
+                    <input class="ngayhethan" type="date" placeholder="  8/2030">
+                    </div>
+                    <div class="group4">
+                        <label>CVV/CVC</label>
+                        <input class="cvv-cvc" type="number" placeholder="  ****">
+                    </div>
+                    <button type = "submit" class="nutthanhtoan"><a href ="./PaymentSuccess.html">Thanh toán</a></button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
