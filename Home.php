@@ -1,3 +1,6 @@
+<?php
+    include 'Database.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,24 +13,7 @@
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css"/>
 </head>
 <body class="body">
-    <header class = "header">
-        <div class="header_left">
-            <a href="/">
-                <img src="./img/Logo.png">
-            </a>
-        </div>
-        <div class="header_middle">
-            <nav class="nav">
-                <div class="item "><a href="./Home.html">Trang chủ</a></div>
-                <div class="item"><a href="./Event.html">Sự kiện</a></div>
-                <div class="item"><a href="./Contact.html">Liên hệ</a></div>
-            </nav>
-        </div>
-        <div class="header_right">
-            <span class="icon-search"><i class="fa fa-phone" aria-hidden="true"></i> 0123456789</span>
-        </div>
-    </header>
-
+    <?php include ($level."Header.php") ?>
     <main class="main">
         <div class="background">
             <img class="logoDamSen" src="./img/LogoDamSen.png">
@@ -77,7 +63,7 @@
                     <input class="hoten" type="text" placeholder="  Họ và tên">
                     <input class="sodienthoai" type="text" placeholder="  Số điện thoại">
                     <input class="email" type="email" placeholder="  Địa chỉ email">
-                    <button type = "submit" class="nutdatve"><a href ="./Payment.html">Đặt vé</a></button>
+                    <button type = "submit" class="nutdatve"><a href ="<?php echo $level.page_path?>Payment.php">Đặt vé</a></button>
                 </form>
             </div>
         </div>

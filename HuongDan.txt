@@ -1,1 +1,5 @@
 Mô tả: Đây là dự án đặt vé vào cổng tại Đầm Sen PARK
+
+
+Sử dụng: date_format để định đạng ngày truyền vào vd:
+<div class="event-date1"><?php echo date_format( $rowData["date_start"],"d/m/Y") ?> - <?php echo date_format( $rowData["date_end"],"d/m/Y") ?></div>

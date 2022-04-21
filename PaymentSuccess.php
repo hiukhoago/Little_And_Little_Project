@@ -1,3 +1,6 @@
+<?php
+    include 'Database.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,23 +13,7 @@
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css"/>
 </head>
 <body class ="body">
-    <header class = "header">
-        <div class="header_left">
-            <a href="/">
-                <img src="./img/Logo.png">
-            </a>
-        </div>
-        <div class="header_middle">
-            <nav class="nav">
-                <div class="item "><a href="./Home.html">Trang chủ</a></div>
-                <div class="item"><a href="./Event.html">Sự kiện</a></div>
-                <div class="item"><a href="./Contact.html">Liên hệ</a></div>
-            </nav>
-        </div>
-        <div class="header_right">
-            <span class="icon-search"><i class="fa fa-phone" aria-hidden="true"></i> 0123456789</span>
-        </div>
-    </header>
+    <?php include ($level."Header.php") ?>
     <main class ="main">
         <div class="background">
             <img class="thanhtoanthanhcong" src="./img/text-thanhtoanthanhcong.png">
