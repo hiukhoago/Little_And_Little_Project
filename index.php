@@ -1,8 +1,27 @@
+<?php
+  include './Database.php';
+  $result = $connect ->prepare('SELECT COUNT(id) FROM ticket_address');
+  $result->execute();
+  $row_ticket_address_count = $result ->fetchAll();
+
+  $result = $connect ->prepare('SELECT COUNT(id) FROM ticket_type');
+  $result->execute();
+  $row_ticket_type_count = $result ->fetchAll();
+
+  $result = $connect ->prepare('SELECT COUNT(id) FROM events');
+  $result->execute();
+  $row_event_count = $result ->fetchAll();
+
+  $result = $connect ->prepare('SELECT COUNT(id) FROM tickets WHERE status = 0');
+  $result->execute();
+  $row_ticket_count = $result ->fetchAll();
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<?php include ("head.php") ?>
+<?php include ("./head.php") ?>
 </head>
 <body>
   <div class="container-scroller">
@@ -73,8 +92,8 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="./page_admin/forms/admin_management.html">Thêm tài khoản</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/forms/client_management.html">Danh sách tài khoản</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./page_admin/forms/add_account.php">Thêm tài khoản</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./page_admin/forms/list_account.php">Danh sách tài khoản</a></li>
               </ul>
             </div>
           </li>
@@ -86,8 +105,10 @@
             </a>
             <div class="collapse" id="ui-basic1">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/forms/basic_elements.html">Địa điểm mua vé</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/forms/basic_elements.html">Loại vé</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./page_admin/forms/add_ticket.php">Thêm vé mới</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./page_admin/forms/list_ticket.php">Danh sách vé</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./page_admin/forms/list_ticket_address.php">Địa điểm mua vé</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./page_admin/forms/list_ticket_type.php">Loại vé</a></li>
               </ul>
             </div>
           </li>
@@ -99,8 +120,8 @@
             </a>
             <div class="collapse" id="ui-basic2">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/forms/basic_elements.html">Thêm sự kiện</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/forms/basic_elements.html">Danh sách sự kiên</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./page_admin/forms/add_event.php">Thêm sự kiện</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./page_admin/forms/list_event.php">Danh sách sự kiên</a></li>
               </ul>
             </div>
           </li>
@@ -130,7 +151,7 @@
                 <div class="card-body">
                   <p class="card-title text-md-center text-xl-left">Các sự kiện đang diễn ra</p>
                   <div class="d-flex flex-wrap justify-content-between justify-content-md-center justify-content-xl-between align-items-center">
-                    <h3 class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0">5</h3>
+                    <h3 class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0"><?php echo $row_event_count[0][0]?></h3>
                     <i class="ti-calendar icon-md text-muted mb-0 mb-md-3 mb-xl-0"></i>
                   </div>  
                   <p class="mb-0 mt-2 text-danger">0.12% <span class="text-black ms-1"><small>(30 days)</small></span></p>
@@ -166,7 +187,7 @@
                 <div class="card-body">
                   <p class="card-title text-md-center text-xl-left">Số lượng vé đã bán</p>
                   <div class="d-flex flex-wrap justify-content-between justify-content-md-center justify-content-xl-between align-items-center">
-                    <h3 class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0">61344</h3>
+                    <h3 class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0"><?php echo $row_ticket_count[0][0]?></h3>
                     <i class="ti-layers-alt icon-md text-muted mb-0 mb-md-3 mb-xl-0"></i>
                   </div>  
                   <p class="mb-0 mt-2 text-success">23.00%<span class="text-black ms-1"><small>(30 days)</small></span></p>
