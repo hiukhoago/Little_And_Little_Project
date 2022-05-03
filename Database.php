@@ -113,8 +113,54 @@
 //        ('ALT20210501',1,1,'2021-12-30',1)";
 //        $connect->exec($sql);
 
+		//CREATE table ADMIN
+
+    //    $sql= "CREATE TABLE `dam_sen`.`admins` ( `id` INT UNSIGNED NOT NULL AUTO_INCREMENT, 
+    //    `user_name` VARCHAR(50) NULL DEFAULT NULL,
+    //    `password` VARCHAR(50)  NULL DEFAULT NULL,
+	//    `fist_name` VARCHAR(50)  NULL DEFAULT NULL,
+	//    `last_name` VARCHAR(50)  NULL DEFAULT NULL,
+	//    `phone_number` VARCHAR(10)  NULL DEFAULT NULL,
+	//    `email` VARCHAR(50)  NULL DEFAULT NULL,
+	//    `birthday` DATE NULL DEFAULT NULL,
+	//    `sex` VARCHAR(5) NULL DEFAULT NULL,
+    //    `avatar` VARCHAR(100) NULL DEFAULT NULL,
+    //    `status` INT(1) NULL DEFAULT NULL,
+    //    PRIMARY KEY (`id`)
+    //    ) ENGINE = InnoDB;";
+    //    $connect->exec($sql);
+
+    //    //INSERT INTO ADMIN TABLE	
+
+    //    $sql = "INSERT INTO `admins` (`user_name`,`password`,`fist_name`,`last_name`,`phone_number`,`email`,`birthday`,`sex`,`avatar`,`status`)
+    //    VALUE ('hiukhoa',`123456aA`,`Khoa`,'Trần',`0355501613`,`hiukhoa@gmail.com`,`2001-04-04`,'Nam',`daidien.png`,1),
+    //    ('tranhiukhoa1',`123456aA`,`Khoa1`,'Trần',`0355501613`,`hiukhoa@gmail.com`,`2001-04-04`,'Nam',`daidien.png`,1),
+    //    ('tranhiukhoa2',`123456aA`,`Khoa2`,'Trần',`0355501613`,`hiukhoa@gmail.com`,`2001-04-04`,'Nam',`daidien.png`,1),
+    //    ('tranhiukhoa3',`123456aA`,`Khoa3`,'Trần',`0355501613`,`hiukhoa@gmail.com`,`2001-04-04`,'Nam',`daidien.png`,1)";
+    //    $connect->exec($sql);
+
+	   //CREATE table MEMBER
+
+    //    $sql= "CREATE TABLE `dam_sen`.`members` ( `id` INT UNSIGNED NOT NULL AUTO_INCREMENT, 
+    //    `visa_number` int(16)  NULL DEFAULT NULL,
+    //    `full_name` VARCHAR(50)  NULL DEFAULT NULL,
+	//    `phone_number` VARCHAR(10)  NULL DEFAULT NULL,
+	//    `email` VARCHAR(50)  NULL DEFAULT NULL,
+	//    `expiration_date` DATE NULL DEFAULT NULL,
+	//    `CVV_CVC` int(4) NULL DEFAULT NULL,
+    //    PRIMARY KEY (`id`)
+    //    ) ENGINE = InnoDB;";
+    //    $connect->exec($sql);
+
+       //INSERT INTO ADMIN TABLE	
+
+    //    $sql = "INSERT INTO `members` (`visa_number`,`full_name`,`phone_number`,`email`,`expiration_date`,`CVV_CVC`)
+    //    VALUE ('0452569875245695',`Trần Hiếu Khoa`,`0355501613`,`hiukhoa@gmail.com`,`2025-04-04`,`1235`),
+    //    		('0563214889562547',`Trần Hiếu Khoa`,`0355501613`,`hiukhoa@gmail.com`,`2024-05-08`,`1885`)";
+    //    $connect->exec($sql);
+
         }
 	 catch(PDOException $e)  {
 		 echo $e->getMessage();
-	 }
+		 }
 ?>	

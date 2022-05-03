@@ -16,16 +16,16 @@
                 <img src="./img/LogoDamSen.png" alt="logo">
               </div>
               <h4>ĐĂNG NHẬP</h4>
-              <form class="pt-3">
+              <form class="pt-3" action="./login_process.php" method="post">
                 <div class="form-group">
-                  <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Username">
+                  <input type="text" name = "tendangnhap" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Tên đăng nhập">
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
+                  <input type="password" name ="matkhau" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Mật khẩu">
                 </div>
-                <div class="mt-3">
-                  <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" href="./index.php">Đăng nhập</a>
-                </div>
+                <div class="right-w3l">
+							    <input type="submit" class="btn btn-block btn-primary form-control" value="Đăng Nhập">
+					  	  </div>
                 <div class="my-2 d-flex justify-content-between align-items-center">
                   <a href="#" class="auth-link text-black">Quên mật khẩu?</a>
                 </div>
