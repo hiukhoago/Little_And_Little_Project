@@ -92,8 +92,8 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="./page_admin/forms/add_account.php">Thêm tài khoản</a></li>
-                <li class="nav-item"> <a class="nav-link" href="./page_admin/forms/list_account.php">Danh sách tài khoản</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./page_admin/forms/list_account_member.php">Khách hàng</a></li>
+                <li class="nav-item"> <a class="nav-link" href="./page_admin/forms/list_account_admin.php">Quản trị</a></li>
               </ul>
             </div>
           </li>
@@ -126,10 +126,28 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/forms/basic_elements.html">
-              <i class="ti-credit-card menu-icon"></i>
-              <span class="menu-title">Quản lý thanh toán</span>
+            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic4" aria-expanded="false" aria-controls="ui-basic4">
+              <i class="ti-flag-alt menu-icon"></i>
+              <span class="menu-title">Quản lý ảnh sự kiện</span>
+              <i class="menu-arrow"></i>
             </a>
+            <div class="collapse" id="ui-basic4">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./page_admin/forms/list_image_event.php">Kho ảnh sự kiện</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic3" aria-expanded="false" aria-controls="ui-basic3">
+              <i class="ti-flag-alt menu-icon"></i>
+              <span class="menu-title">Quản lý thanh toán</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic3">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="./page_admin/forms/list_bill.php">Danh sách hóa đơn</a></li>
+              </ul>
+            </div>
           </li>
         </ul>
       </nav>

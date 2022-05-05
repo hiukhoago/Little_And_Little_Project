@@ -159,6 +159,27 @@
     //    		('0563214889562547',`Trần Hiếu Khoa`,`0355501613`,`hiukhoa@gmail.com`,`2024-05-08`,`1885`)";
     //    $connect->exec($sql);
 
+    //CREATE table BILL.
+
+        $sql= "CREATE TABLE `dam_sen`.`bills` ( `id` INT UNSIGNED NOT NULL AUTO_INCREMENT, 
+        `visa_number` int(16) NULL DEFAULT NULL,
+        `date_create` DATE NULL DEFAULT NULL,
+        `date_delete` DATE NULL DEFAULT NULL,
+        `date_update` DATE NULL DEFAULT NULL,
+        `total_price` INT(11) NULL DEFAULT NULL,
+        `status` VARCHAR(1) NULL DEFAULT NULL,
+        PRIMARY KEY (`id`)) ENGINE = InnoDB;";
+        $connect->exec($sql);
+
+//        //  //INSERT INTO database EVENTS table
+
+//         $sql = "INSERT INTO `events` (`event_name`,`address`,`date_start`,`date_end`,`ticket_price`,`describe`,`images_id`)
+//         VALUE ('Tên sự kiện 1','Đầm sen Park','2021-05-30','2021-06-01',25000,'This is describe','sk001'),
+//         ('Tên sự kiện 2','Đầm sen Park','2021-12-30','2022-01-01',25000,'This is describe','sk002'),
+//         ('Tên sự kiện 3','Đầm sen Park','2021-08-30','2021-09-01',25000,'This is describe','sk003'),
+//         ('Tên sự kiện 4','Đầm sen Park','2021-09-30','2021-10-01',25000,'This is describe','sk004')";
+//         $connect->exec($sql);
+
         }
 	 catch(PDOException $e)  {
 		 echo $e->getMessage();
