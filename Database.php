@@ -161,15 +161,15 @@
 
     //CREATE table BILL.
 
-        $sql= "CREATE TABLE `dam_sen`.`bills` ( `id` INT UNSIGNED NOT NULL AUTO_INCREMENT, 
-        `visa_number` int(16) NULL DEFAULT NULL,
-        `date_create` DATE NULL DEFAULT NULL,
-        `date_delete` DATE NULL DEFAULT NULL,
-        `date_update` DATE NULL DEFAULT NULL,
-        `total_price` INT(11) NULL DEFAULT NULL,
-        `status` VARCHAR(1) NULL DEFAULT NULL,
-        PRIMARY KEY (`id`)) ENGINE = InnoDB;";
-        $connect->exec($sql);
+        // $sql= "CREATE TABLE `dam_sen`.`bills` ( `id` INT UNSIGNED NOT NULL AUTO_INCREMENT, 
+        // `visa_number` int(16) NULL DEFAULT NULL,
+        // `date_create` DATE NULL DEFAULT NULL,
+        // `date_delete` DATE NULL DEFAULT NULL,
+        // `date_update` DATE NULL DEFAULT NULL,
+        // `total_price` INT(11) NULL DEFAULT NULL,
+        // `status` VARCHAR(1) NULL DEFAULT NULL,
+        // PRIMARY KEY (`id`)) ENGINE = InnoDB;";
+        // $connect->exec($sql);
 
 //        //  //INSERT INTO database EVENTS table
 

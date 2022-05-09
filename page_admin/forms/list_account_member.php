@@ -1,4 +1,5 @@
 <?php 
+   $level="../../";
    include '../../Database.php';
    $result = $connect ->prepare('SELECT * FROM members');
    $result->execute();
@@ -80,8 +81,7 @@
                           <?php echo $member['CVV_CVC'];?>
                           </td>
                           <td>
-                            <a type="button" class="btn btn-info btn-rounded btn-fw"href="./add_ticket.php">Detail</a>  
-                            <a type="button" class="btn btn-secondary btn-rounded btn-fw"href="./add_ticket.php">Edit</a>  
+                            <a type="button" class="btn btn-secondary btn-rounded btn-fw"href="<?php echo 'edit_account_member.php?id='.$member['id'];?> ">Edit</a>  
                           </td>
                         </tr>
                         <?php

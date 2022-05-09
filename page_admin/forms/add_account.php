@@ -1,15 +1,17 @@
+<?php 
+  $level="../";
+?>
 <!DOCTYPE html>
 <html lang="en">
-
-<?php include ("../elements/head.php") ?>
+<?php include('../elements/head.php') ?>
 <body>
   <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
-    <?php include ("../elements/header.php") ?>
+    <?php include ('../elements/header.php') ?>
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
       <!-- partial:partials/_sidebar.html -->
-      <?php include ("../elements/partial.php") ?>
+      <?php include ('../elements/partial.php') ?>
       <div class="main-panel"> 
         <div class="content-wrapper">
           <div class="row">

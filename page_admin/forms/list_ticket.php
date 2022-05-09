@@ -74,9 +74,8 @@
                           <td>
                           <?php if($ticket['status']==1) {echo 'Đang sử dụng';}else{ echo 'Hết hạn sử dụng';}?>
                           </td>
-                          <td>
-                            <a type="button" class="btn btn-info btn-rounded btn-fw"href="./add_ticket.php">Detail</a>  
-                            <a type="button" class="btn btn-secondary btn-rounded btn-fw"href="./add_ticket.php">Edit</a>  
+                          <td> 
+                            <a type="button" class="btn btn-secondary btn-rounded btn-fw"href="<?php echo 'edit_ticket.php?id='.$ticket['id'];?>">Edit</a>  
                           </td>
                         </tr>
                         <?php

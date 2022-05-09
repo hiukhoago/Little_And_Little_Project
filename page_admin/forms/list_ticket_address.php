@@ -63,7 +63,7 @@
                           <?php if($ticket_address['status']==1) {echo 'Đang sử dụng';}else{ echo 'Hết hạn sử dụng';}?>
                           </td>
                           <td>
-                          <a type="button" class="btn btn-secondary btn-rounded btn-fw"href="./add_ticket.php">Edit</a>
+                          <a type="button" class="btn btn-secondary btn-rounded btn-fw"href="<?php echo 'edit_ticket_address.php?id='.$ticket_address['id'];?>">Edit</a>
                           </td>
                         </tr>
                         <?php

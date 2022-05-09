@@ -14,8 +14,8 @@
       </a>
       <div class="collapse" id="ui-basic">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" href="../forms/list_account_member.php">Khách hàng</a></li>
-          <li class="nav-item"> <a class="nav-link" href="../forms/list_account_admin.php">Quản trị</a></li>
+          <li class="nav-item"> <a class="nav-link" href="../forms/account/list_account_member.php">Khách hàng</a></li>
+          <li class="nav-item"> <a class="nav-link" href="../forms/account/list_account_admin.php">Quản trị</a></li>
         </ul>
       </div>
     </li>
