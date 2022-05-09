@@ -1,7 +1,8 @@
 <?php 
-   include '../../Database.php';
-   $result = $connect ->prepare('SELECT * FROM admins');
-   $result->execute();
+  include '../../Database.php';
+
+  $result = $connect ->prepare('SELECT * FROM admins');
+  $result->execute();
   $row_admin = $result ->fetchAll();
 ?>
 <!DOCTYPE html>
@@ -35,9 +36,6 @@
                             Tên tài khoản
                           </th>
                           <th>
-                            Mật khẩu
-                          </th>
-                          <th>
                             Họ và tên
                           </th>
                           <th>
@@ -45,15 +43,6 @@
                           </th>
                           <th>
                             Email
-                          </th>
-                          <th>
-                            Ngày sinh
-                          </th>
-                          <th>
-                            Giới tính
-                          </th>
-                          <th>
-                            Ảnh đại diện
                           </th>
                           <th>
                             Tình trạng
@@ -76,9 +65,6 @@
                           <?php echo $admin['user_name'];?>
                           </td>
                           <td>
-                          <?php echo $admin['password'];?>
-                          </td>
-                          <td>
                           <?php echo $admin['last_name'];echo ' '; echo $admin['fist_name'];?>
                           </td>
                           <td>
@@ -88,20 +74,11 @@
                           <?php echo $admin['email'];?>
                           </td>
                           <td>
-                          <?php echo $admin['birthday'];?>
+                          <?php if($admin['status'] == 1){echo 'Hoạt động';} else {echo 'Không hoạt động';}?>
                           </td>
                           <td>
-                          <?php echo $admin['sex'];?>
-                          </td>
-                          <td>
-                          <?php echo $admin['avatar'];?>
-                          </td>
-                          <td>
-                          <?php echo $admin['status'];?>
-                          </td>
-                          <td>
-                            <a type="button" class="btn btn-info btn-rounded btn-fw"href="./add_ticket.php">Detail</a>  
-                            <a type="button" class="btn btn-secondary btn-rounded btn-fw"href="./add_ticket.php">Edit</a>  
+                            <a type="button" class="btn btn-info btn-rounded btn-fw"href="<?php echo 'detail_account_admin.php?id='.$admin['id'];?> ">Detail</a>  
+                            <a type="button" class="btn btn-secondary btn-rounded btn-fw"href="<?php echo 'edit_account_admin.php?id='.$admin['id'];?>">Edit</a>  
                           </td>
                         </tr>
                         <?php

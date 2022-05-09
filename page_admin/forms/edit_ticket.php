@@ -35,6 +35,7 @@
                     <h4 class="card-title">Chỉnh sửa vé</h4>
                     <form class="forms-sample" action="<?php echo './edit_ticket_process.php'?> " method="POST" enctype="multipart/form-data">
                       <div class="form-group">
+                      <input type="text" hidden="true" class="form-control" name ="id" value="<?php echo $row_ticket[0]['id']; ?>">
                         <label for="exampleInputName1">Mã vé</label>
                         <input name = "code" value = "<?php echo $row_ticket[0]['ticket_code'];?>" class="form-control"  disabled>
                       </div>
@@ -81,7 +82,7 @@
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label">Ngày sử dụng</label>
                           <div class="col-sm-9">
-                            <input name = "ngaysudung" class="form-control" placeholder="yyyy/mm/dd"/>
+                            <input name = "ngaysudung" class="form-control" value = "<?php echo $row_ticket[0]['date_use'];?>"/>
                           </div>
                         </div>
                       </div>
@@ -90,8 +91,13 @@
                           <label class="col-sm-3 col-form-label">Trạng thái</label>
                           <div class="col-sm-9">
                             <select class="form-control" name ="trangthai">
-                              <option value="1">Đang sử dụng</option>
-                              <option value="0">Hết hạn sử dụng</option>
+                            <?php
+                                if( $row_ticket[0]['status']==1){ ?>
+                                  <option value="1" checked >Đang sử dụng</option>
+                                  <option value="0">Hết hạn sử dụng</option>
+                              <?php
+                                }
+                              ?>
                             </select>
                           </div>
                         </div>

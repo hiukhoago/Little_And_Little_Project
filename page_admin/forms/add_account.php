@@ -58,7 +58,7 @@
                           <div class="col-sm-9">
                             <select class="form-control" name ="gioitinh">
                               <option value="1">Nam</option>
-                              <option value="0">Nữ</option>
+                              <option value="2">Nữ</option>
                               <option value="0">Khác</option>
                             </select>
                           </div>

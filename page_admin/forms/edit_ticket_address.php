@@ -26,8 +26,9 @@
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title">Chỉnh sửa địa điểm mua vé</h4>
-                    <form class="forms-sample" action="<?php echo './add_ticket_address_address_process.php'?> " method="POST" enctype="multipart/form-data">
+                    <form class="forms-sample" action="<?php echo './edit_ticket_address_process.php'?> " method="POST" enctype="multipart/form-data">
                       <div class="form-group">
+                      <input type="text" hidden="true" class="form-control" name ="id" value="<?php echo $row_ticket_address[0]['id']; ?>">
                         <label for="exampleInputName2">Tên địa điểm</label>
                         <input name = "tendiadiem" value = "<?php echo $row_ticket_address[0]['ticket_address_name'];?>" type="text" class="form-control">
                       </div>
@@ -40,8 +41,13 @@
                           <label class="col-sm-3 col-form-label">Trạng thái</label>
                           <div class="col-sm-9">
                             <select class="form-control" name ="trangthai">
-                              <option value="1">Đang sử dụng</option>
-                              <option value="0">Hết hạn sử dụng</option>
+                            <?php
+                                if( $row_ticket_address[0]['status']==1){ ?>
+                                  <option value="1" checked >Đang sử dụng</option>
+                                  <option value="0">Hết hạn sử dụng</option>
+                              <?php
+                                }
+                              ?>
                             </select>
                           </div>
                         </div>
