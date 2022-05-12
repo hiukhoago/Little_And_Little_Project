@@ -37,7 +37,7 @@
                   <label style="font-weight: bold;">Ngày sinh: </label><?php echo $detail_admin_row[0]['birthday']?><br> <br>
                   <label style="font-weight: bold;">Giới tính: </label><?php echo $detail_admin_row[0]['sex']?><br> <br>
                   <label style="font-weight: bold;">Tình trạng: </label><?php echo $detail_admin_row[0]['status']?><br> <br>
-                  <label style="font-weight: bold;">Ảnh đại diện: </label><?php echo $detail_admin_row[0]['avatar']?><br> <br>
+                  <label style="font-weight: bold;">Ảnh đại diện: </label><img src="<?php echo '../../img/avatar/' . $detail_admin_row[0]['avatar']?>"><br> <br>
                   <a type="button" class="btn btn-warning btn-rounded btn-fw"href="./list_account_admin.php">Quay lại</a>  
                 </div>
               </div>

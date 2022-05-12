@@ -25,7 +25,7 @@
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title">Chỉnh sửa tài khoản ADMIN</h4>
-                    <form class="forms-sample" action = "<?php echo 'edit_account_admin_process.php'?>" method="POST" enctype="multipart/form-data">
+                    <form class="forms-sample" action = "<?php echo '../forms/account/edit_account_admin_process.php'?>" method="POST" enctype="multipart/form-data">
                       <div class="form-group">
                         <input type="text" hidden="true" class="form-control" name ="id" value="<?php echo $edit_admin_row[0]['id']; ?>">
                         <label for="exampleInputName1">Tên đăng nhập</label>
@@ -114,6 +114,11 @@
                             </select>
                           </div>
                         </div>
+                      </div>
+                      <div class="form-group">
+                        <label>Ảnh đại diện</label>
+                        <img src="<?php echo '../../img/avatar/' . $edit_admin_row[0]['avatar']?>">
+                        <input type="file" name="anhdaidien" >
                       </div>
                       <button type="submit" class="btn btn-primary me-2">Cập nhật</button>
                     </form>

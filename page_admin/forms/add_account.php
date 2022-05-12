@@ -19,7 +19,7 @@
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title">Thêm tài khoản admin mới</h4>
-                    <form class="forms-sample">
+                    <form class="forms-sample" action="<?php echo '../forms/account/add_account_process.php'?> " method="POST" enctype="multipart/form-data">
                       <div class="form-group">
                         <label for="exampleInputName1">Tên tài khoản</label>
                         <input type="text" class="form-control" name ="tentaikhoan" id="exampleInputName1" placeholder="Tên đăng nhập">
@@ -77,13 +77,13 @@
                       </div>
                       <div class="form-group">
                         <label>Ảnh đại diện</label>
-                        <input type="file" name="img[]" class="file-upload-default">
-                        <div class="input-group col-xs-12">
-                          <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
+                        <input type="file" name="anhdaidien" >
+                        <!-- <div class="input-group col-xs-12">
+                          <input type="text" class="form-control file-upload-info" placeholder="Upload Image">
                           <span class="input-group-append">
                             <button class="file-upload-browse btn btn-primary" type="button">Tải lên</button>
                           </span>
-                        </div>
+                        </div> -->
                       </div>
                       <button type="submit" class="btn btn-primary me-2">Tạo</button>
                       <button class="btn btn-light">Trở lại</button>

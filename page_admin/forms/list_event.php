@@ -22,7 +22,7 @@
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Danh sách các sự kiện</h4>
-                  <a type="button" class="btn btn-success btn-rounded btn-fw"href="./add_ticket.php">Thêm sự kiện mới</a>  
+                  <a type="button" class="btn btn-success btn-rounded btn-fw"href="./add_event.php">Thêm sự kiện mới</a>  
                   
                   <div class="table-responsive pt-3">
                     <table class="table table-bordered">
@@ -45,9 +45,6 @@
                           </th>
                           <th>
                             Giá vé
-                          </th>
-                          <th>
-                            Mô tả
                           </th>
                           <th>
                             Chức năng
@@ -76,14 +73,11 @@
                           <?php echo $event['date_end'];?>
                           </td>
                           <td>
-                          <?php echo $event['ticked_price'];?>
+                          <?php echo $event['ticket_price'];?>
                           </td>
                           <td>
-                          <?php echo $event['describe'];?>
-                          </td>
-                          <td>
-                            <a type="button" class="btn btn-info btn-rounded btn-fw"href="./add_ticket.php">Detail</a>  
-                            <a type="button" class="btn btn-secondary btn-rounded btn-fw"href="./add_ticket.php">Edit</a>  
+                            <a type="button" class="btn btn-info btn-rounded btn-fw"href="<?php echo '../../EventDetail.php?id='.$event['id'];?>"">Detail</a>  
+                            <a type="button" class="btn btn-secondary btn-rounded btn-fw"href="<?php echo 'edit_event.php?id='.$event['id'];?>">Edit</a>  
                           </td>
                         </tr>
                         <?php

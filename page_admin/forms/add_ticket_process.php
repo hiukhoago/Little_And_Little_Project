@@ -16,7 +16,7 @@
         echo "Lỗi: " . $sql . "<br>" . $connect->error;
     };
     $result ->BindValue(':maVe',$maVe,PDO::PARAM_STR);
-    $result ->BindValue(':noiMuaVe',$noiMuaVe,PDO::PARAM_INT);
+    $result ->BindValue(':noiMuaVe',$noiMuaVe,PDO::PARAM_STR);
     $result ->BindValue(':loaiVe',$loaiVe,PDO::PARAM_INT);
     $result ->BindValue(':ngaySuDung',$ngaySuDung,PDO::PARAM_INT);
     $result ->BindValue(':trangThai',$trangThai,PDO::PARAM_INT);

@@ -1,5 +1,5 @@
 <?php
-    include '../../Database.php';
+    include '../../../Database.php';
 
     $tenLoaiVe = $_POST['tenloaive']; 
     $giaVe = $_POST['giave']; 
@@ -20,5 +20,5 @@
 
 ?>
 <html>
-<a href="<?php echo './add_ticket_type.php'?>">Trở lại</a>
+<a href="<?php echo '../add_ticket_type.php'?>">Trở lại</a>
 </html>

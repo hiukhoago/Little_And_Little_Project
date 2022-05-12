@@ -21,7 +21,7 @@
             <div class="col-lg-12 stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Danh sách các loại vé</h4>
+                  <h4 class="card-title">Danh sách ảnh sự kiện</h4>
                   <a type="button" class="btn btn-success btn-rounded btn-fw"href="./add_image_event.php">Thêm ảnh mới</a>
                   <div class="table-responsive pt-3">
                     <table class="table table-bordered">
@@ -35,6 +35,12 @@
                           </th>
                           <th>
                             Tên ảnh
+                          </th>
+                          <th>
+                            Mô tả
+                          </th>
+                          <th>
+                            Trạng thái
                           </th>
                           <th>
                             Chức năng
@@ -57,8 +63,14 @@
                           <?php echo $image['image_name'] ;?>
                           </td>
                           <td>
-                          <a type="button" class="btn btn-info btn-rounded btn-fw"href="./add_ticket.php">Detail</a>  
-                          <a type="button" class="btn btn-secondary btn-rounded btn-fw"href="./add_ticket.php">Edit</a>
+                          <?php echo $image['describe'] ;?>
+                          </td>
+                          <td>
+                          <?php if($image['status']==1){echo 'Đang hoạt động';}else{echo 'Không hoạt động';} ;?>
+                          </td>
+                          <td>
+                          <a type="button" class="btn btn-info btn-rounded btn-fw"href="<?php echo 'detail_image_event.php?id='.$image['id'];?>">Detail</a>  
+                          <a type="button" class="btn btn-secondary btn-rounded btn-fw"href="<?php echo 'edit_image_event.php?id='.$image['id'];?>">Edit</a>
                           </td>
                         </tr>
                         <?php

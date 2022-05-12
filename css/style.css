@@ -437,10 +437,14 @@
 .sukien{
     position: absolute;
     top:65px;
-    left:570px;
+    left:40%;
     max-width:400px;
     max-height:50px;
     z-index: 1;
+    font-size:50px;
+    color:white;
+    font-weight:bold;
+    font-family: cursive;
 }
 .bangchitiet{
     position: absolute;

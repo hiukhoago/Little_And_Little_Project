@@ -20,7 +20,7 @@
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title">Thêm loại vé mới</h4>
-                    <form class="forms-sample" action="<?php echo './add_ticket_type_process.php'?> " method="POST" enctype="multipart/form-data">
+                    <form class="forms-sample" action="<?php echo '../forms/ticket/add_ticket_type_process.php'?> " method="POST" enctype="multipart/form-data">
                       <div class="form-group">
                         <label for="exampleInputName2">Tên loại vé</label>
                         <input name = "tenloaive" type="text" class="form-control">

@@ -3,7 +3,7 @@
         include_once ($level."Config.php");
 
 	 $host_name='localhost';
-	 $db_name='dam_sen';
+	 $db_name='dam_sen2';
 	 $user_name='root';
 	 $password='';
 	 try
@@ -14,54 +14,58 @@
 
 //         //CREATE table EVENTS.
 
-//         $sql= "CREATE TABLE `dam_sen`.`events` ( `id` INT UNSIGNED NOT NULL AUTO_INCREMENT, 
-//         `event_name` VARCHAR(50) NULL DEFAULT NULL,
-//         `address` VARCHAR(50) NULL DEFAULT NULL,
-//         `date_start` DATE NULL DEFAULT NULL,
-//         `date_end` DATE NULL DEFAULT NULL,
-//         `ticket_price` INT(11) NULL DEFAULT NULL,
-//         `describe` VARCHAR(5000) NULL DEFAULT NULL,
-//         `images_id` VARCHAR(10) NULL DEFAULT NULL,
-//         PRIMARY KEY (`id`)) ENGINE = InnoDB;";
-//         $connect->exec($sql);
+        // $sql= "CREATE TABLE `dam_sen2`.`events` ( `id` INT UNSIGNED NOT NULL AUTO_INCREMENT, 
+        // `event_name` VARCHAR(50) NULL DEFAULT NULL,
+        // `address` VARCHAR(50) NULL DEFAULT NULL,
+        // `date_start` DATE NULL DEFAULT NULL,
+        // `date_end` DATE NULL DEFAULT NULL,
+        // `ticket_price` INT(11) NULL DEFAULT NULL,
+        // `describe_1` VARCHAR(5000) NULL DEFAULT NULL,
+        // `describe_2` VARCHAR(5000) NULL DEFAULT NULL,
+        // `describe_3` VARCHAR(5000) NULL DEFAULT NULL,
+        // `status` INT(1) NULL DEFAULT NULL,
+        // PRIMARY KEY (`id`)) ENGINE = InnoDB;";
+        // $connect->exec($sql);
 
 //        //  //INSERT INTO database EVENTS table
 
-//         $sql = "INSERT INTO `events` (`event_name`,`address`,`date_start`,`date_end`,`ticket_price`,`describe`,`images_id`)
-//         VALUE ('Tên sự kiện 1','Đầm sen Park','2021-05-30','2021-06-01',25000,'This is describe','sk001'),
-//         ('Tên sự kiện 2','Đầm sen Park','2021-12-30','2022-01-01',25000,'This is describe','sk002'),
-//         ('Tên sự kiện 3','Đầm sen Park','2021-08-30','2021-09-01',25000,'This is describe','sk003'),
-//         ('Tên sự kiện 4','Đầm sen Park','2021-09-30','2021-10-01',25000,'This is describe','sk004')";
-//         $connect->exec($sql);
+        // $sql = "INSERT INTO `events` (`event_name`,`address`,`date_start`,`date_end`,`ticket_price`,`describe_1`,`describe_2`,`describe_3`,`status`)
+        // VALUE ('Tên sự kiện 1','Đầm sen Park','2021-05-30','2021-06-01',25000,'This is describe 1 : Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn.','This is describe 2 : Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn.','This is describe 3 : Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn.',1),
+        // ('Tên sự kiện 2','Đầm sen Park','2021-12-30','2022-01-01',25000,'This is describe 1 : Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn.','This is describe 2 : Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn.','This is describe 3 : Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn.',1),
+        // ('Tên sự kiện 3','Đầm sen Park','2021-08-30','2021-09-01',25000,'This is describe 1','This is describe 2','This is describe 3',0),
+        // ('Tên sự kiện 4','Đầm sen Park','2021-09-30','2021-10-01',25000,'This is describe 1','This is describe 2','This is describe 3',0)";
+        // $connect->exec($sql);
 
 //        // //CREATE table IMAGES EVENT
 
-//        $sql= "CREATE TABLE `dam_sen`.`images_event` ( `id` INT UNSIGNED NOT NULL AUTO_INCREMENT, 
-//        `images_event_id` INT UNSIGNED NULL DEFAULT NULL,
-//        `image_name` VARCHAR(50) NULL DEFAULT NULL,
-//        PRIMARY KEY (`id`,`images_event_id`),
-//        CONSTRAINT `fk_images` FOREIGN KEY (`images_event_id`) REFERENCES `events` (`id`)
-//        ) ENGINE = InnoDB;";
-//        $connect->exec($sql);
+    //    $sql= "CREATE TABLE `dam_sen2`.`images_event` ( `id` INT UNSIGNED NOT NULL AUTO_INCREMENT, 
+    //    `images_event_id` INT UNSIGNED NULL DEFAULT NULL,
+    //    `image_name` VARCHAR(50) NULL DEFAULT NULL,
+    //    `describe` VARCHAR(5000) NULL DEFAULT NULL,
+    //    `status` INT(1) NULL DEFAULT NULL,
+    //    PRIMARY KEY (`id`,`images_event_id`),
+    //    CONSTRAINT `fk_images` FOREIGN KEY (`images_event_id`) REFERENCES `events` (`id`)
+    //    ) ENGINE = InnoDB;";
+    //    $connect->exec($sql);
 
 //        // //INSERT INTO database IMAGES EVENT table
 
-//        $sql = "INSERT INTO `images_event` (`images_event_id`,`image_name`)
-//        VALUE ('1','chitiet1.png'),
-//        ('1','chitiet2.png'),
-//        ('1','sukien-1.png'),
-//        ('2','sukien-2.png'),
-//        ('3','sukien-3.png')";
-//        $connect->exec($sql);
+    //    $sql = "INSERT INTO `images_event` (`images_event_id`,`image_name`,`describe`,`status`)
+    //    VALUE ('1','chitietsukien1_0.png','Ảnh sự kiện 1', 1),
+    //    ('1','chitietsukien1_1.png','Ảnh sự kiện 1', 1),
+    //    ('1','chitietsukien1_2.png','Ảnh sự kiện 1', 1),
+    //    ('2','chitietsukien2_1.png','Ảnh sự kiện 2', 0),
+    //    ('3','chitietsukien3_1.png','Ảnh sự kiện 3', 0)";
+    //    $connect->exec($sql);
 
 //         //CREATE TICKET-TYPE TABLE
 
-//         $sql= "CREATE TABLE `dam_sen`.`ticket_type` ( `id` INT UNSIGNED NOT NULL AUTO_INCREMENT, 
-//         `ticket_type_name` VARCHAR(255) NULL DEFAULT NULL,
-//         `ticket_type_price` INT(11) NULL DEFAULT NULL,
-//         `status` INT(1) NULL DEFAULT NULL,
-//         PRIMARY KEY (`id`)) ENGINE = InnoDB;";
-//         $connect->exec($sql);
+        // $sql= "CREATE TABLE `dam_sen2`.`ticket_type` ( `id` INT UNSIGNED NOT NULL AUTO_INCREMENT, 
+        // `ticket_type_name` VARCHAR(255) NULL DEFAULT NULL,
+        // `ticket_type_price` INT(11) NULL DEFAULT NULL,
+        // `status` INT(1) NULL DEFAULT NULL,
+        // PRIMARY KEY (`id`)) ENGINE = InnoDB;";
+        // $connect->exec($sql);
 
 //         //INSERT INTO TICKET-TYPE TABLE
 
@@ -75,12 +79,12 @@
 
 //         //CREATE TICKET-ADDRESS TABLE
 
-//         $sql= "CREATE TABLE `dam_sen`.`ticket_address` ( `id` INT UNSIGNED NOT NULL AUTO_INCREMENT, 
-//         `ticket_address_name` VARCHAR(255) NULL DEFAULT NULL,
-//         `ticket_address_price` INT(11) NULL DEFAULT NULL,
-//         `status` INT(1) NULL DEFAULT NULL,
-//         PRIMARY KEY (`id`)) ENGINE = InnoDB;";
-//         $connect->exec($sql);
+        // $sql= "CREATE TABLE `dam_sen2`.`ticket_address` ( `id` INT UNSIGNED NOT NULL AUTO_INCREMENT, 
+        // `ticket_address_name` VARCHAR(255) NULL DEFAULT NULL,
+        // `ticket_address_price` INT(11) NULL DEFAULT NULL,
+        // `status` INT(1) NULL DEFAULT NULL,
+        // PRIMARY KEY (`id`)) ENGINE = InnoDB;";
+        // $connect->exec($sql);
 
 //         //INSERT INTO TICKET-ADDRESS TABLE
 
@@ -92,17 +96,17 @@
 
 //        //CREATE table TICKET
 
-//        $sql= "CREATE TABLE `dam_sen`.`tickets` ( `id` INT UNSIGNED NOT NULL AUTO_INCREMENT, 
-//        `ticket_code` VARCHAR(11) NULL DEFAULT NULL,
-//        `id_ticket_address` INT UNSIGNED NULL DEFAULT NULL,
-//        `id_ticket_type` INT UNSIGNED NULL DEFAULT NULL,
-//        `date_use` DATE NULL DEFAULT NULL,
-//        `status` INT(1) NULL DEFAULT NULL,
-//        PRIMARY KEY (`id`),
-//        CONSTRAINT `fk_ticket_address` FOREIGN KEY (`id_ticket_address`) REFERENCES `ticket_address` (`id`),
-//        CONSTRAINT `fk_ticket_type` FOREIGN KEY (`id_ticket_type`) REFERENCES `ticket_type` (`id`)
-//        ) ENGINE = InnoDB;";
-//        $connect->exec($sql);
+    //    $sql= "CREATE TABLE `dam_sen2`.`tickets` ( `id` INT UNSIGNED NOT NULL AUTO_INCREMENT, 
+    //    `ticket_code` VARCHAR(11) NULL DEFAULT NULL,
+    //    `id_ticket_address` INT UNSIGNED NULL DEFAULT NULL,
+    //    `id_ticket_type` INT UNSIGNED NULL DEFAULT NULL,
+    //    `date_use` DATE NULL DEFAULT NULL,
+    //    `status` INT(1) NULL DEFAULT NULL,
+    //    PRIMARY KEY (`id`),
+    //    CONSTRAINT `fk_ticket_address` FOREIGN KEY (`id_ticket_address`) REFERENCES `ticket_address` (`id`),
+    //    CONSTRAINT `fk_ticket_type` FOREIGN KEY (`id_ticket_type`) REFERENCES `ticket_type` (`id`)
+    //    ) ENGINE = InnoDB;";
+    //    $connect->exec($sql);
 
 //        //INSERT INTO TICKET-ADDRESS TABLE
 
@@ -115,7 +119,7 @@
 
 		//CREATE table ADMIN
 
-    //    $sql= "CREATE TABLE `dam_sen`.`admins` ( `id` INT UNSIGNED NOT NULL AUTO_INCREMENT, 
+    //    $sql= "CREATE TABLE `dam_sen2`.`admins` ( `id` INT UNSIGNED NOT NULL AUTO_INCREMENT, 
     //    `user_name` VARCHAR(50) NULL DEFAULT NULL,
     //    `password` VARCHAR(50)  NULL DEFAULT NULL,
 	//    `fist_name` VARCHAR(50)  NULL DEFAULT NULL,
@@ -133,15 +137,15 @@
     //    //INSERT INTO ADMIN TABLE	
 
     //    $sql = "INSERT INTO `admins` (`user_name`,`password`,`fist_name`,`last_name`,`phone_number`,`email`,`birthday`,`sex`,`avatar`,`status`)
-    //    VALUE ('hiukhoa',`123456aA`,`Khoa`,'Trần',`0355501613`,`hiukhoa@gmail.com`,`2001-04-04`,'Nam',`daidien.png`,1),
-    //    ('tranhiukhoa1',`123456aA`,`Khoa1`,'Trần',`0355501613`,`hiukhoa@gmail.com`,`2001-04-04`,'Nam',`daidien.png`,1),
-    //    ('tranhiukhoa2',`123456aA`,`Khoa2`,'Trần',`0355501613`,`hiukhoa@gmail.com`,`2001-04-04`,'Nam',`daidien.png`,1),
-    //    ('tranhiukhoa3',`123456aA`,`Khoa3`,'Trần',`0355501613`,`hiukhoa@gmail.com`,`2001-04-04`,'Nam',`daidien.png`,1)";
+    //    VALUE ('hiukhoa','123456aA','Khoa','Trần','0355501613','hiukhoa@gmail.com','2001-04-04','Nam','anhdaidien1.jpg',1),
+    //    ('tranhiukhoa2','123456aA','Khoa2','Trần','0355501613','hiukhoa1@gmail.com','2001-04-04','Nam','anhdaidien2.jpg',1),
+    //    ('tranhiukhoa3','123456aA','Khoa3','Trần','0355501613','hiukhoa2@gmail.com','2001-04-04','Nam','anhdaidien3.jpg',1),
+    //    ('tranhiukhoa4','123456aA','Khoa4','Trần','0355501613','hiukhoa3@gmail.com','2001-04-04','Nam','anhdaidien4.jpg',1)";
     //    $connect->exec($sql);
 
 	   //CREATE table MEMBER
 
-    //    $sql= "CREATE TABLE `dam_sen`.`members` ( `id` INT UNSIGNED NOT NULL AUTO_INCREMENT, 
+    //    $sql= "CREATE TABLE `dam_sen2`.`members` ( `id` INT UNSIGNED NOT NULL AUTO_INCREMENT, 
     //    `visa_number` int(16)  NULL DEFAULT NULL,
     //    `full_name` VARCHAR(50)  NULL DEFAULT NULL,
 	//    `phone_number` VARCHAR(10)  NULL DEFAULT NULL,
@@ -161,7 +165,7 @@
 
     //CREATE table BILL.
 
-        // $sql= "CREATE TABLE `dam_sen`.`bills` ( `id` INT UNSIGNED NOT NULL AUTO_INCREMENT, 
+        // $sql= "CREATE TABLE `dam_sen2`.`bills` ( `id` INT UNSIGNED NOT NULL AUTO_INCREMENT, 
         // `visa_number` int(16) NULL DEFAULT NULL,
         // `date_create` DATE NULL DEFAULT NULL,
         // `date_delete` DATE NULL DEFAULT NULL,
@@ -171,14 +175,6 @@
         // PRIMARY KEY (`id`)) ENGINE = InnoDB;";
         // $connect->exec($sql);
 
-//        //  //INSERT INTO database EVENTS table
-
-//         $sql = "INSERT INTO `events` (`event_name`,`address`,`date_start`,`date_end`,`ticket_price`,`describe`,`images_id`)
-//         VALUE ('Tên sự kiện 1','Đầm sen Park','2021-05-30','2021-06-01',25000,'This is describe','sk001'),
-//         ('Tên sự kiện 2','Đầm sen Park','2021-12-30','2022-01-01',25000,'This is describe','sk002'),
-//         ('Tên sự kiện 3','Đầm sen Park','2021-08-30','2021-09-01',25000,'This is describe','sk003'),
-//         ('Tên sự kiện 4','Đầm sen Park','2021-09-30','2021-10-01',25000,'This is describe','sk004')";
-//         $connect->exec($sql);
 
         }
 	 catch(PDOException $e)  {

@@ -13113,6 +13113,9 @@ fieldset:disabled .btn {
 .card-title {
   margin-bottom: 0.5rem;
 }
+.card-title label{
+  font-weight: bold;
+}
 
 .card-subtitle {
   margin-top: -0.25rem;

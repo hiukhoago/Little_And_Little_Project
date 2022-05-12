@@ -127,7 +127,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic4" aria-expanded="false" aria-controls="ui-basic4">
-              <i class="ti-flag-alt menu-icon"></i>
+              <i class="ti-image menu-icon"></i>
               <span class="menu-title">Quản lý ảnh sự kiện</span>
               <i class="menu-arrow"></i>
             </a>
@@ -139,7 +139,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic3" aria-expanded="false" aria-controls="ui-basic3">
-              <i class="ti-flag-alt menu-icon"></i>
+              <i class="ti-credit-card menu-icon"></i>
               <span class="menu-title">Quản lý thanh toán</span>
               <i class="menu-arrow"></i>
             </a>

@@ -48,6 +48,13 @@
                               <?php
                                 }
                               ?>
+                              <?php
+                                if( $row_ticket_address[0]['status']==0){ ?>
+                                  <option value="1">Đang sử dụng</option>
+                                  <option value="0" checked>Hết hạn sử dụng</option>
+                              <?php
+                                }
+                              ?>
                             </select>
                           </div>
                         </div>
