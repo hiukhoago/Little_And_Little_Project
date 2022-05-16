@@ -11,6 +11,9 @@
     // $result->execute();
     // $result_row = $result->fetchAll();
     //var_dump($eventData);
+    $img=$connect->prepare('SELECT * FROM events, images_event WHERE events.id = '.$id.' AND events.id = images_event.images_event_id AND images_event.status = 1');
+    $img->execute();
+    $rows_img = $img->fetchALL();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,7 +39,7 @@
                 <img class = "bangchitiet" src="<?php echo $level.img_path?>bangchitietsukien.png">
                 <div class="content-event">
                     <div class="content-event-left">
-                        <img  class="anh1" src="<?php echo $level.img_path?>chitiet1.png">
+                        <img  class="anh1" src="<?php echo $level.img_event.$rows_img[0]['image_name']?>">
                         <div class="infom">
                             <div class="date-start">
                                 <img class="calendar-icon" src="<?php echo $level.img_path?>icon-calendar.png">
@@ -53,7 +56,7 @@
                             </div>
                         </div>
                         <div class="content-event-right-ss2">
-                            <img class="anhchitiet-sk" src="<?php echo $level.img_path?>chitiet2.png">
+                            <img class="anhchitiet-sk" src="<?php echo $level.img_event.$rows_img[1]['image_name']?>">
                             <div class="event-detail-text">
                             <?php echo $eventData[0]["describe_2"] ?> 
                             </div>
@@ -62,7 +65,7 @@
                             <div class="event-detail-text">
                                 <?php echo $eventData[0]["describe_3"] ?> 
                             </div>
-                            <img class="anhchitiet-sk" src="<?php echo $level.img_path?>chitiet2.png">
+                            <img class="anhchitiet-sk" src="<?php echo $level.img_event.$rows_img[2]['image_name']?>">
                         </div>
                     </div>
                 </div>

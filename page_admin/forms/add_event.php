@@ -73,23 +73,6 @@
                         <label for="exampleInputName1">Đoạn mô tả thứ 3:</label>
                         <textarea type="text" name="mota" class="form-control" id="exampleInputName1" placeholder="Mô tả"></textarea>
                       </div>
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Ảnh</label>
-                          <div class="col-sm-9">
-                          <select class="form-control" name="anh">
-                            <?php foreach ($row_image as $image)
-                                    {
-                            ?>
-                                <option value = "<?php echo $image['images_event_id'];?>">
-                                <?php echo $image['image_name'];?></option>
-                            <?php
-                                    }
-                            ?>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
                       <button type="submit" class="btn btn-primary me-2">Tạo</button>
                       <button class="btn btn-light">Trở lại</button>
                     </form>

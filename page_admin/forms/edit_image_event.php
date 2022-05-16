@@ -40,9 +40,11 @@
                             <?php foreach ($row_event as $event)
                                     {
                             ?>
-                              <option value = "<?php echo $event['id'];?>">
-                              <?php if($event['status']==1){ 
-                               echo $event['event_name'];}?></option>
+                              <option value = "<?php echo $event['id'];?>"
+                              <?php if(($event['id']==$row_image[0]['images_event_id'] )&& ($event['status']==1)){ 
+                               echo "selected = 'selected'";}?>> 
+                               <?php echo $event['event_name'];?>
+                              </option>
                             <?php
                                     }
                             ?>
@@ -52,13 +54,8 @@
                       </div>
                       <div class="form-group">
                         <label>Ảnh sự kiện</label>
-                        <input type="file" name="img" class="file-upload-default">
-                        <div class="input-group col-xs-12">
-                          <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
-                          <span class="input-group-append">
-                            <button class="file-upload-browse btn btn-primary" type="button">Tải lên</button>
-                          </span>
-                        </div>
+                        <img style="width:415px;" src="<?php echo '../../img/event/' . $row_image[0]['image_name']?>">
+                        <input type="file" name="anhdaidien" >
                       </div>
                       <div class="form-group">
                         <label for="exampleInputName1">Mô tả</label>
@@ -70,19 +67,20 @@
                           <div class="col-sm-9">
                             <select class="form-control" name ="trangthai">
                             <?php
+                                if($row_image[0]['status']==1){ ?>
+                                  <option value="0">Không hoạt động</option>
+                                  <option value="1" <?php echo "selected = 'selected'";?>>Đang hoạt động</option>
+                              <?php
+                                }
+                              ?>
+                            <?php
                                 if($row_image[0]['status']==0){ ?>
-                                  <option value="0" checked >Không hoạt động</option>
+                                  <option value="0" <?php echo "selected = 'selected'";?> >Không hoạt động</option>
                                   <option value="1">Đang hoạt động</option>
                               <?php
                                 }
                               ?>
-                              <?php
-                                if($row_image[0]['status']==1){ ?>
-                                  <option value="0">Không hoạt động</option>
-                                  <option value="1" checked>Đang hoạt động</option>
-                              <?php
-                                }
-                              ?>
+                              
                             </select>
                           </div>
                         </div>

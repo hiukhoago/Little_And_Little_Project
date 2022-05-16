@@ -89,7 +89,9 @@
                             <?php foreach ($row_image as $image)
                                     {
                             ?>
-                                <option value = "<?php echo $image['images_event_id'];?>">
+                                <option value = "<?php  echo $image['id'];?>"
+                                <?php if(($image['images_event_id']==$row_event[0]['id'] )&& ($image['status']==1)){
+                                   echo "selected = 'selected'";}else{ echo 'Chưa có ảnh sự kiện';}?> >
                                 <?php echo $image['image_name'];?></option>
                             <?php
                                     }

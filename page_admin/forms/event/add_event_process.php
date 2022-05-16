@@ -6,11 +6,12 @@
     $date_start = $_POST['ngaybatdau'];
     $date_end = $_POST['ngayketthuc'];
     $giaVe = $_POST['giave'];
-    $describe = $_POST['mota'];
-    $image = $_POST['anh'];
+    $describe1 = $_POST['mota1'];
+    $describe2 = $_POST['mota2'];
+    $describe3 = $_POST['mota3'];
 
-    $add_event_sql = "INSERT INTO events (event_name, address, date_start, date_end, ticked_price, describe, images_id)
-                        VALUE (:name_event, :address,:date_start, :date_end, :giaVe, :describe, :image)";
+    $add_event_sql = "INSERT INTO events (event_name, address, date_start, date_end, ticked_price, describe_1, describe_2, describe_3)
+                        VALUE (:name_event, :address,:date_start, :date_end, :giaVe, :describe1, :describe2, :describe3)";
 
 if($result = $connect ->prepare($add_event_sql)){?>
     <script>alert("Thêm thành công")</script>
@@ -22,8 +23,9 @@ if($result = $connect ->prepare($add_event_sql)){?>
     $result ->BindValue(':date_strart',$date_start,PDO::PARAM_INT);
     $result ->BindValue(':date_end',$date_end,PDO::PARAM_INT);
     $result ->BindValue(':giaVe',$giaVe,PDO::PARAM_INT);
-    $result ->BindValue(':describe',$describe,PDO::PARAM_STR);
-    $result ->BindValue(':image',$image,PDO::PARAM_INT);
+    $result ->BindValue(':describe1',$describe1,PDO::PARAM_STR);
+    $result ->BindValue(':describe2',$describe2,PDO::PARAM_STR);
+    $result ->BindValue(':describe3',$describe3,PDO::PARAM_STR);
     $result->execute();
 
 ?>

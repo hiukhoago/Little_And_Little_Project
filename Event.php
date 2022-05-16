@@ -39,7 +39,7 @@
                                         <img class="calendar-icon1" src="<?php echo $level.img_path?>icon-calendar.png">
                                         <div class="event-date1"><?php echo $rowData["date_start"] ?> - <?php echo $rowData["date_end"] ?></div>
                                     </div>
-                                    <div class="event-price1"><?php echo number_format( $rowData["ticked_price"],0)." VNĐ" ?></div>
+                                    <div class="event-price1"><?php echo number_format( $rowData["ticket_price"],0)." VNĐ" ?></div>
                                     <a href="<?php echo $level.page_path.'EventDetail.php?id='.$rowData['id'];?>" class="btn-xemchitiet"></a>
                                 </div>
                             </div>

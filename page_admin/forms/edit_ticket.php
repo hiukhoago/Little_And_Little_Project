@@ -93,7 +93,7 @@
                             <select class="form-control" name ="trangthai">
                             <?php
                                 if( $row_ticket[0]['status']==1){ ?>
-                                  <option value="1" checked >Đang sử dụng</option>
+                                  <option value="1" <?php echo "selected = 'selected'";?> >Đang sử dụng</option>
                                   <option value="0">Hết hạn sử dụng</option>
                               <?php
                                 }

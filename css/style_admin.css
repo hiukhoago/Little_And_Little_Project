@@ -10497,7 +10497,7 @@ progress {
 }
 
 .col-form-label {
-  padding-top: calc(0.875rem + 1px);
+  padding-top: calc(0.5rem + 1px);
   padding-bottom: calc(0.875rem + 1px);
   margin-bottom: 0;
   font-size: inherit;
@@ -10528,7 +10528,7 @@ progress {
   padding: 0.875rem 1.375rem;
   font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1;
+  /* line-height: 1; */
   color: #212529;
   background-color: color(white);
   background-clip: padding-box;

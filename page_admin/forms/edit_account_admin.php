@@ -117,7 +117,7 @@
                       </div>
                       <div class="form-group">
                         <label>Ảnh đại diện</label>
-                        <img src="<?php echo '../../img/avatar/' . $edit_admin_row[0]['avatar']?>">
+                        <img style = "width:200px;" src="<?php echo '../../img/avatar/' . $edit_admin_row[0]['avatar']?>">
                         <input type="file" name="anhdaidien" >
                       </div>
                       <button type="submit" class="btn btn-primary me-2">Cập nhật</button>
