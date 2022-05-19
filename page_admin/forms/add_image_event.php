@@ -43,14 +43,8 @@
                         </div>
                       </div>
                       <div class="form-group">
-                        <label>Ảnh sự kiện</label>
-                        <input type="file" name="img" class="file-upload-default">
-                        <div class="input-group col-xs-12">
-                          <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
-                          <span class="input-group-append">
-                            <button class="file-upload-browse btn btn-primary" type="button">Tải lên</button>
-                          </span>
-                        </div>
+                        <label>Tải ảnh sự kiện</label>
+                        <input type="file" name="img" multiple>
                       </div>
                       <div class="form-group">
                         <label for="exampleInputName1">Mô tả</label>

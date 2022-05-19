@@ -29,11 +29,12 @@
             <div class="col-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Thêm ảnh sự kiện mới</h4>
-                    <form class="forms-sample" action="<?php echo './add_image_event_process.php'?> " method="POST" enctype="multipart/form-data">
+                    <h4 class="card-title">Chỉnh sửa ảnh</h4>
+                    <form class="forms-sample" action="<?php echo '../forms/event_image/edit_image_event_process.php'?> " method="POST" enctype="multipart/form-data">
                     <div class="col-md-6">
                         <div class="form-group row">
                         <input type="text" hidden="true" class="form-control" name ="id" value="<?php echo $row_image[0]['id']; ?>">
+                        <input type="text" hidden="true" class="form-control" name ="value_image" value="<?php echo $row_image[0]['image_name']; ?>">
                           <label class="col-sm-3 col-form-label">Chọn sự kiện</label>
                           <div class="col-sm-9">
                             <select class="form-control" name="masukien">
@@ -55,7 +56,7 @@
                       <div class="form-group">
                         <label>Ảnh sự kiện</label>
                         <img style="width:415px;" src="<?php echo '../../img/event/' . $row_image[0]['image_name']?>">
-                        <input type="file" name="anhdaidien" >
+                        <input type="file" name="img" >
                       </div>
                       <div class="form-group">
                         <label for="exampleInputName1">Mô tả</label>
@@ -66,21 +67,8 @@
                           <label class="col-sm-3 col-form-label">Trạng thái</label>
                           <div class="col-sm-9">
                             <select class="form-control" name ="trangthai">
-                            <?php
-                                if($row_image[0]['status']==1){ ?>
-                                  <option value="0">Không hoạt động</option>
-                                  <option value="1" <?php echo "selected = 'selected'";?>>Đang hoạt động</option>
-                              <?php
-                                }
-                              ?>
-                            <?php
-                                if($row_image[0]['status']==0){ ?>
-                                  <option value="0" <?php echo "selected = 'selected'";?> >Không hoạt động</option>
-                                  <option value="1">Đang hoạt động</option>
-                              <?php
-                                }
-                              ?>
-                              
+                                <option value="0" <?php if($row_image[0]['status']==0) echo "selected = 'selected'";?>>Không hoạt động</option>
+                                <option value="1" <?php if($row_image[0]['status']==1) echo "selected = 'selected'";?>>Đang hoạt động</option>
                             </select>
                           </div>
                         </div>

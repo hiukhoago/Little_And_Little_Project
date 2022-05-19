@@ -36,7 +36,7 @@
                   <label style="font-weight: bold;">Email: </label><?php echo $detail_admin_row[0]['email']?><br> <br>
                   <label style="font-weight: bold;">Ngày sinh: </label><?php echo $detail_admin_row[0]['birthday']?><br> <br>
                   <label style="font-weight: bold;">Giới tính: </label><?php echo $detail_admin_row[0]['sex']?><br> <br>
-                  <label style="font-weight: bold;">Tình trạng: </label><?php echo $detail_admin_row[0]['status']?><br> <br>
+                  <label style="font-weight: bold;">Tình trạng: </label><?php if($detail_admin_row[0]['status']==1) echo 'Đang hoạt động'; else echo 'Ngừng hoạt động' ;?><br> <br>
                   <label style="font-weight: bold;">Ảnh đại diện: </label><img style="width:200px;" src="<?php echo '../../img/avatar/' . $detail_admin_row[0]['avatar']?>"><br> <br>
                   <a type="button" class="btn btn-warning btn-rounded btn-fw"href="./list_account_admin.php">Quay lại</a>  
                 </div>

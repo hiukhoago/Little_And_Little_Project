@@ -1,7 +1,8 @@
 <?php 
-   include '../../Database.php';
-   $result = $connect ->prepare('SELECT * FROM ticket_address');
-   $result->execute();
+  session_start();
+  include '../../Database.php';
+  $result = $connect ->prepare('SELECT * FROM ticket_address');
+  $result->execute();
   $row_ticket_address = $result ->fetchAll();
 ?>
 <!DOCTYPE html>

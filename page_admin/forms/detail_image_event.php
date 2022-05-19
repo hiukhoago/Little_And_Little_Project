@@ -31,7 +31,7 @@
                   <label style="font-weight: bold;">Mã ảnh sự kiện :</label><?php echo $detail_image_row[0]['images_event_id']?><br> <br>
                   <label style="font-weight: bold;">Mô tả: </label><?php echo $detail_image_row[0]['describe']?><br> <br>
                   <label style="font-weight: bold;">Trạng thái: </label><?php if($detail_image_row[0]['status']==1){echo 'Đang hoạt động';}else{echo 'Không hoạt động';} ?><br> <br>
-                  <label style="font-weight: bold;">Ảnh: </label><?php echo $detail_image_row[0]['image_name']?><br> <br>
+                  <label style="font-weight: bold;">Ảnh: </label><br><img style="width:500px;" src="<?php echo '../../img/event/' . $detail_image_row[0]['image_name']?>"> <br> <br>
                   <a type="button" class="btn btn-warning btn-rounded btn-fw"href="./list_image_event.php">Quay lại</a>  
                 </div>
               </div>

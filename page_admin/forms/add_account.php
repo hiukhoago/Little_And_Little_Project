@@ -78,12 +78,6 @@
                       <div class="form-group">
                         <label>Ảnh đại diện</label>
                         <input type="file" name="anhdaidien" >
-                        <!-- <div class="input-group col-xs-12">
-                          <input type="text" class="form-control file-upload-info" placeholder="Upload Image">
-                          <span class="input-group-append">
-                            <button class="file-upload-browse btn btn-primary" type="button">Tải lên</button>
-                          </span>
-                        </div> -->
                       </div>
                       <button type="submit" class="btn btn-primary me-2">Tạo</button>
                       <button class="btn btn-light">Trở lại</button>

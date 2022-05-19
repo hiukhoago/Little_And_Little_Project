@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include '../../../Database.php';
 
     if ($_SERVER['REQUEST_METHOD'] !== 'POST')
@@ -31,8 +32,8 @@
     $allowtypes    = array('jpg', 'png', 'jpeg', 'gif'); // Những lại file được upload
     if (file_exists($name_img)) // Kiểm tra tồn tại
     {
-        echo "Đã tồn tại ảnh, vui lòng chọn ảnh khác";
-        $allowUpload = false;
+        echo "Đã tồn tại ảnh, sẽ ghi đè lên ảnh cũ";
+        $allowUpload = true;
     }
     if ($_FILES["anhdaidien"]["size"] > 2100000)
     {

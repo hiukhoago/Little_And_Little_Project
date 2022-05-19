@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include '../../../Database.php';
 
     $name_event = $_POST['tensukien']; 
@@ -9,26 +10,34 @@
     $describe1 = $_POST['mota1'];
     $describe2 = $_POST['mota2'];
     $describe3 = $_POST['mota3'];
+    $status = $_POST['trangthai'];
 
-    $add_event_sql = "INSERT INTO events (event_name, address, date_start, date_end, ticked_price, describe_1, describe_2, describe_3)
-                        VALUE (:name_event, :address,:date_start, :date_end, :giaVe, :describe1, :describe2, :describe3)";
-
-if($result = $connect ->prepare($add_event_sql)){?>
-    <script>alert("Thêm thành công")</script>
-<?php }else{?>
-  <script> alert("<?php echo "Lỗi: " . $sql . "<br>" . $connect->error; ?>"); </script> 
-<?php };
-    $result ->BindValue(':name_event',$name_event,PDO::PARAM_STR);
-    $result ->BindValue(':address',$address,PDO::PARAM_STR);
-    $result ->BindValue(':date_strart',$date_start,PDO::PARAM_INT);
-    $result ->BindValue(':date_end',$date_end,PDO::PARAM_INT);
-    $result ->BindValue(':giaVe',$giaVe,PDO::PARAM_INT);
-    $result ->BindValue(':describe1',$describe1,PDO::PARAM_STR);
-    $result ->BindValue(':describe2',$describe2,PDO::PARAM_STR);
-    $result ->BindValue(':describe3',$describe3,PDO::PARAM_STR);
+    $add_event_sql = "INSERT INTO events (event_name, address, date_start, date_end, ticket_price, describe_1, describe_2, describe_3,status)
+                        VALUE ('".$name_event."', '".$address."','". $date_start."', '".$date_end."', '".$giaVe."', '".$describe1."', '".$describe2."', '".$describe3."','".$status."')";
+    
+    $result = $connect ->prepare($add_event_sql);
     $result->execute();
-
+    header('Location: ../list_event.php');
+    // $data = [
+    //     ':name_event' => $name_event,
+    //     ':address' => $address,
+    //     ':date_start' => $date_start,
+    //     ':date_end' => $date_end,
+    //     ':giaVe' => $giaVe,
+    //     ':describe1' => $describe1,
+    //     ':describe2' => $describe2,
+    //     ':descrbibe3' => $describe3,
+    //     ':status' => $status,
+    // ];
+    // $query_execute = $result->execute($data);
+    // if($query_execute){
+    //     $_SESSION['message'] = "Thêm thành công";
+    //     header('Location: ../list_event.php');
+    //     exit(0);
+    // }
+    // else{
+    //     $_SESSION['message'] = "Không thành công";
+    //     header('Location: ../list_event.php');
+    //     exit(0);
+    // }
 ?>
-<html>
-<a href="<?php echo '../list_event.php'?>">Trở lại</a>
-</html>

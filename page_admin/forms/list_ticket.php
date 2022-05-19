@@ -1,8 +1,16 @@
 <?php 
-   include '../../Database.php';
-   $result = $connect ->prepare('SELECT * FROM tickets');
-   $result->execute();
+  include '../../Database.php';
+  $result = $connect ->prepare('SELECT * FROM tickets');
+  $result->execute();
   $row_ticket = $result ->fetchAll();
+  //name address
+  $ticket_address = $connect ->prepare('SELECT * FROM tickets,ticket_address WHERE ticket_address.id = tickets.id_ticket_address');
+  $ticket_address->execute();
+  $row_ticket_address = $ticket_address ->fetchAll();
+  //name type
+  $ticket_type = $connect ->prepare('SELECT * FROM tickets,ticket_type WHERE ticket_type.id = tickets.id_ticket_type');
+  $ticket_type->execute();
+  $row_ticket_type = $ticket_type ->fetchAll();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -63,10 +71,10 @@
                           <?php echo $ticket['ticket_code'];?>
                           </td>
                           <td>
-                          <?php echo $ticket['id_ticket_address'];?>
+                          <?php echo $row_ticket_address[0]['ticket_address_name'];?>
                           </td>
                           <td>
-                          <?php echo $ticket['id_ticket_type'];?>
+                          <?php echo $row_ticket_type[0]['ticket_type_name'];?>
                           </td>
                           <td>
                           <?php echo $ticket['date_use'];?>

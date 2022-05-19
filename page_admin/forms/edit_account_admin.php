@@ -28,6 +28,7 @@
                     <form class="forms-sample" action = "<?php echo '../forms/account/edit_account_admin_process.php'?>" method="POST" enctype="multipart/form-data">
                       <div class="form-group">
                         <input type="text" hidden="true" class="form-control" name ="id" value="<?php echo $edit_admin_row[0]['id']; ?>">
+                        <input type="text" hidden="true" class="form-control" name ="value_image" value="<?php echo $edit_admin_row[0]['avatar']; ?>">
                         <label for="exampleInputName1">Tên đăng nhập</label>
                         <input type="text"  class="form-control" name ="tendangnhap" value="<?php echo $edit_admin_row[0]['user_name']; ?>">
                       </div>
@@ -64,30 +65,9 @@
                           <label class="col-sm-3 col-form-label">Giới tính</label>
                           <div class="col-sm-9">
                             <select class="form-control" name ="gioitinh">
-                              <?php
-                                if($edit_admin_row[0]['sex']=='Nam'){ ?>
-                                  <option value="1" checked >Nam</option>
-                                  <option value="2">Nữ</option>
-                                  <option value="0">Khác</option>
-                              <?php
-                                }
-                              ?>
-                              <?php
-                                if($edit_admin_row[0]['sex']=='Nữ'){ ?>
-                                  <option value="2" checked >Nữ</option>
-                                  <option value="1">Nam</option>
-                                  <option value="0">Khác</option>
-                              <?php
-                                }
-                              ?>
-                              <?php
-                                if($edit_admin_row[0]['sex']=='Khác'){ ?>
-                                  <option value="0" checked >Khác</option>
-                                  <option value="2">Nữ</option>
-                                  <option value="1">Nam</option>
-                              <?php
-                                }
-                              ?>
+                                <option value="Nam" <?php if($edit_admin_row[0]['sex']=='Nam') echo "selected = 'selected'";?> >Nam</option>
+                                <option value="Nữ"<?php if($edit_admin_row[0]['sex']=='Nữ') echo "selected = 'selected'";?> >Nữ</option>
+                                <option value="Khác" <?php if($edit_admin_row[0]['sex']=='Khác') echo "selected = 'selected'";?>>Khác</option>
                             </select>
                           </div>
                         </div>
@@ -99,14 +79,14 @@
                             <select class="form-control" name ="trangthai">
                             <?php
                                 if($edit_admin_row[0]['status']==1){ ?>
-                                  <option value="1" checked >Hoạt động</option>
+                                  <option value="1" <?php echo "selected = 'selected'";?> >Hoạt động</option>
                                   <option value="0">Không hoạt động</option>
                               <?php
                                 }
                               ?>
                               <?php
                                 if($edit_admin_row[0]['status']==0){ ?>
-                                  <option value="0" checked >Không hoạt động</option>
+                                  <option value="0" <?php echo "selected = 'selected'";?> >Không hoạt động</option>
                                   <option value="1">Hoạt động</option>
                               <?php
                                 }
@@ -117,7 +97,7 @@
                       </div>
                       <div class="form-group">
                         <label>Ảnh đại diện</label>
-                        <img style = "width:200px;" src="<?php echo '../../img/avatar/' . $edit_admin_row[0]['avatar']?>">
+                        <img style="width:200px;" src="<?php echo '../../img/avatar/' . $edit_admin_row[0]['avatar']?>">
                         <input type="file" name="anhdaidien" >
                       </div>
                       <button type="submit" class="btn btn-primary me-2">Cập nhật</button>

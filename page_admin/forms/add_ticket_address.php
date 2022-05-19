@@ -20,7 +20,7 @@
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title">Thêm địa điểm mua vé mới</h4>
-                    <form class="forms-sample" action="<?php echo './add_ticket_address_process.php'?> " method="POST" enctype="multipart/form-data">
+                    <form class="forms-sample" action="<?php echo '../forms/ticket/add_ticket_address_process.php'?> " method="POST" enctype="multipart/form-data">
                       <div class="form-group">
                         <label for="exampleInputName2">Tên địa điểm</label>
                         <input name = "tendiadiem" type="text" class="form-control">
@@ -40,7 +40,7 @@
                           </div>
                         </div>
                       </div>
-                      <button type="submit" class="btn btn-primary me-2">Thêm</button>
+                      <button type="submit" name ="add" class="btn btn-primary me-2">Thêm</button>
                       <button class="btn btn-light">Trở lại</button>
                     </form>
                   </div>

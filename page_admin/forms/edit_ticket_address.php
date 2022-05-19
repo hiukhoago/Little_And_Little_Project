@@ -41,20 +41,8 @@
                           <label class="col-sm-3 col-form-label">Trạng thái</label>
                           <div class="col-sm-9">
                             <select class="form-control" name ="trangthai">
-                            <?php
-                                if( $row_ticket_address[0]['status']==1){ ?>
-                                  <option value="1" <?php echo "selected = 'selected'";?> >Đang sử dụng</option>
-                                  <option value="0">Hết hạn sử dụng</option>
-                              <?php
-                                }
-                              ?>
-                              <?php
-                                if( $row_ticket_address[0]['status']==0){ ?>
-                                  <option value="1">Đang sử dụng</option>
-                                  <option value="0" <?php echo "selected = 'selected'";?>>Hết hạn sử dụng</option>
-                              <?php
-                                }
-                              ?>
+                                <option value="1" <?php  if( $row_ticket_address[0]['status']==1) echo "selected = 'selected'";?> >Đang sử dụng</option>
+                                <option value="0" <?php  if( $row_ticket_address[0]['status']==0) echo "selected = 'selected'";?>>Hết hạn sử dụng</option>
                             </select>
                           </div>
                         </div>

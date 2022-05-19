@@ -33,10 +33,10 @@
                           <label class="col-sm-3 col-form-label">Địa chỉ</label>
                           <div class="col-sm-9">
                             <select class="form-control" name ="diachi">
-                              <option value="0">Đầm Sen Park</option>
-                              <option value="1">Quảng Trường La Mã</option>
-                              <option value="2">Quảng Trường Âu Lạc</option>
-                              <option value="3">Cầu Cửu Khúc</option>
+                              <option value="Đầm Sen Park">Đầm Sen Park</option>
+                              <option value="Quảng Trường La Mã">Quảng Trường La Mã</option>
+                              <option value="Quảng Trường Âu Lạc">Quảng Trường Âu Lạc</option>
+                              <option value="Cầu Cửu Khúc">Cầu Cửu Khúc</option>
                             </select>
                           </div>
                         </div>
@@ -63,19 +63,31 @@
                       </div>
                       <div class="form-group">
                         <label for="exampleInputName1">Đoạn mô tả thứ 1:</label>
-                        <textarea type="text" name="mota" class="form-control" id="exampleInputName1" placeholder="Mô tả"></textarea>
+                        <textarea type="text" name="mota1" class="form-control" id="exampleInputName1" placeholder="Mô tả"></textarea>
                       </div>
                       <div class="form-group">
                         <label for="exampleInputName1">Đoạn mô tả thứ 2:</label>
-                        <textarea type="text" name="mota" class="form-control" id="exampleInputName1" placeholder="Mô tả"></textarea>
+                        <textarea type="text" name="mota2" class="form-control" id="exampleInputName1" placeholder="Mô tả"></textarea>
                       </div>
                       <div class="form-group">
                         <label for="exampleInputName1">Đoạn mô tả thứ 3:</label>
-                        <textarea type="text" name="mota" class="form-control" id="exampleInputName1" placeholder="Mô tả"></textarea>
+                        <textarea type="text" name="mota3" class="form-control" id="exampleInputName1" placeholder="Mô tả"></textarea>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Trạng thái</label>
+                          <div class="col-sm-9">
+                            <select class="form-control" name ="trangthai">
+                              <option value="1">Chờ hoạt động</option>
+                              <option value="2">Đang hoạt động</option>
+                              <option value="0">Không hoạt động</option>
+                            </select>
+                          </div>
+                        </div>
                       </div>
                       <button type="submit" class="btn btn-primary me-2">Tạo</button>
-                      <button class="btn btn-light">Trở lại</button>
                     </form>
+                    <button class="btn btn-light">Trở lại</button>
                   </div>
                 </div>
               </div>
