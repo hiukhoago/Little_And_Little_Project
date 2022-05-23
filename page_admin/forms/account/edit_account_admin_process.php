@@ -48,16 +48,17 @@
                       email = '" . $email . "' WHERE id ='".$id."' ";
 
 $result = $connect ->prepare($update_admin);
-    $result ->BindValue(':user_name',$user_name,PDO::PARAM_STR);
-    $result ->BindValue(':password',$password,PDO::PARAM_STR);
-    $result ->BindValue(':last_name',$last_name,PDO::PARAM_STR);
-    $result ->BindValue(':fist_name',$fist_name,PDO::PARAM_STR);
-    $result ->BindValue(':email',$email,PDO::PARAM_STR);
-    $result ->BindValue(':phone_number',$phone_number,PDO::PARAM_INT);
-    $result ->BindValue(':birthday',$birthday,PDO::PARAM_INT);
-    $result ->BindValue(':sex',$sex,PDO::PARAM_STR);
-    $result ->BindValue(':avatar',$avatar,PDO::PARAM_STR);
-    $result->bindValue(':status', $status, PDO::PARAM_INT);
+    // $result ->BindValue(':id',$id,PDO::PARAM_INT);  
+    // $result ->BindValue(':user_name',$user_name,PDO::PARAM_STR);
+    // $result ->BindValue(':password',$password,PDO::PARAM_STR);
+    // $result ->BindValue(':last_name',$last_name,PDO::PARAM_STR);
+    // $result ->BindValue(':fist_name',$fist_name,PDO::PARAM_STR);
+    // $result ->BindValue(':email',$email,PDO::PARAM_STR);
+    // $result ->BindValue(':phone_number',$phone_number,PDO::PARAM_INT);
+    // $result ->BindValue(':birthday',$birthday,PDO::PARAM_INT);
+    // $result ->BindValue(':sex',$sex,PDO::PARAM_STR);
+    // $result ->BindValue(':avatar',$avatar,PDO::PARAM_STR);
+    // $result->bindValue(':status', $status, PDO::PARAM_INT);
     $result->execute();
 if($result = $connect ->prepare($update_admin)){?>
     <script>alert("Cập nhật thành công")</script>

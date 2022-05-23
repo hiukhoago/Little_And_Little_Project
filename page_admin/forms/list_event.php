@@ -22,9 +22,6 @@
             <div class="col-lg-12 stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <?php if(isset($_SESSION['message'])) :?>
-                      <h5 class = "alert alert-success"><?php $_SESSION['message'];?></h5>
-                  <?php endif; ?>
                   <h4 class="card-title">Danh sách các sự kiện</h4>
                   <a type="button" class="btn btn-success btn-rounded btn-fw"href="./add_event.php">Thêm sự kiện mới</a>  
                   <div class="table-responsive pt-3">

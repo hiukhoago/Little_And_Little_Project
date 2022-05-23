@@ -1,5 +1,5 @@
 <?php
-    include '../../Database.php';
+    include '../../../Database.php';
 
     $id =  $_POST['id'];
     $address = $_POST['tendiadiem'];
@@ -11,16 +11,10 @@
                       ticket_address_price = '" . $price . "',
                       status = '" . $status . "'
                       WHERE id = '" . $id . "' ";
-
-    if($result = $connect ->prepare($update_ticket_address)){?>
-        <script>alert("Cập nhật thành công")</script>
-    <?php }else{?>
+$result = $connect ->prepare($update_ticket_address);
+    if($result->execute()){
+      header('Location: ../list_ticket_address.php');
+     }else{?>
       <script> alert("<?php echo "Lỗi: " . $sql . "<br>" . $connect->error; ?>"); </script> 
     <?php };
-
-    $result->execute();
-
 ?>
-<html>
-<a href="<?php echo './list_ticket_address.php'?>">Trở lại</a>
-</html>

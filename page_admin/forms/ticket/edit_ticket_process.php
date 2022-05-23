@@ -1,5 +1,5 @@
 <?php
-    include '../../Database.php';
+    include '../../../Database.php';
 
     $id =  $_POST['id'];
     $address = $_POST['noimuave'];
@@ -14,15 +14,10 @@
                       status = '" . $status . "'
                       WHERE id = '" . $id . "' ";
 
-    if($result = $connect ->prepare($update_ticket)){?>
-        <script>alert("Cập nhật thành công")</script>
-    <?php }else{?>
+$result = $connect ->prepare($update_ticket);
+    if($result->execute()){
+      header('Location: ../list_ticket.php');
+     }else{?>
       <script> alert("<?php echo "Lỗi: " . $sql . "<br>" . $connect->error; ?>"); </script> 
     <?php };
-
-    $result->execute();
-
 ?>
-<html>
-<a href="<?php echo './list_ticket.php'?>">Trở lại</a>
-</html>

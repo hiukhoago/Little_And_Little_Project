@@ -203,6 +203,7 @@
     line-height: 20px;
     outline: none;
     border: none;
+    /* margin-left: 10px; */
 }
 .soluong{
     appearance: none;
@@ -770,6 +771,7 @@
     line-height: 20px;
     outline: none;
     border: none;
+    margin-left: 10px;
 }
 .thongtinve label{
     margin-top: 0px;

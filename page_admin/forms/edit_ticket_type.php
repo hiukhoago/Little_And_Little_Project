@@ -26,7 +26,7 @@
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title">Chỉnh sửa loại vé</h4>
-                    <form class="forms-sample" action="<?php echo './edit_ticket_type_process.php'?> " method="POST" enctype="multipart/form-data">
+                    <form class="forms-sample" action="<?php echo '../forms/ticket/edit_ticket_type_process.php'?> " method="POST" enctype="multipart/form-data">
                       <div class="form-group">
                       <input type="text" hidden="true" class="form-control" name ="id" value="<?php echo $row_ticket_type[0]['id']; ?>">
                         <label for="exampleInputName2">Tên loại vé</label>

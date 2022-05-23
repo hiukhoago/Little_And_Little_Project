@@ -1,5 +1,20 @@
 <?php
     include 'Database.php';
+
+    // $sotienthanhtoan=$_GET['sotienthanhtoan'];
+    $soluongve=4;
+    //$ngaysudung="2022/04/04";
+    // $thongtinlienhe=$_GET['thongtinlienhe'];
+    // $sodienthoai=$_GET['sodienthoai'];
+    // $email=$_GET['email'];
+
+    $date = date('d');
+    $month = date('m');
+    $year = date('Y');
+
+    $datetime = date('Ymd');
+    $code_ticket = 'ALT' . $datetime;
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,52 +37,26 @@
                 <img class = "bangthanhtoanthanhcong" src="./img/bangchitietsukien.png">
                 <div class="list-ve">
                     <div class="card-deck-ve">
-                        <div class="card-ve">
+                        <?php for($i=0;$i< $soluongve; $i++)
+                        {?>
+                            <div class="card-ve">
                             <img class="card-img-top1" src="./img/maqr.png" alt="Card image">
                             <div class="card-body">
-                                <h4 class="card-title1">ALT20210501</h4>
+                                <h4 class="card-title1"><?php echo $code_ticket;?></h4>
                                 <div class="ticket-address">VÉ CỔNG</div>
                                 <div class="bagach">---</div>
-                                <div class="use-date">Ngày sử dụng: 31/05/2021</div>
+                                <div class="use-date">Ngày sử dụng: <?php echo $date. '/' .$month. '/'.$year?></div>
                                 <img src="./img/tick.png" class="tick">
                               </div>
                         </div>
-                        <div class="card-ve">
-                            <img class="card-img-top1" src="./img/maqr.png" alt="Card image">
-                            <div class="card-body">
-                                <h4 class="card-title1">ALT20210501</h4>
-                                <div class="ticket-address">VÉ CỔNG</div>
-                                <div class="bagach">---</div>
-                                <div class="use-date">Ngày sử dụng: 31/05/2021</div>
-                                <img src="./img/tick.png" class="tick">
-                              </div>
-                        </div>
-                        <div class="card-ve">
-                            <img class="card-img-top1" src="./img/maqr.png" alt="Card image">
-                            <div class="card-body">
-                                <h4 class="card-title1">ALT20210501</h4>
-                                <div class="ticket-address">VÉ CỔNG</div>
-                                <div class="bagach">---</div>
-                                <div class="use-date">Ngày sử dụng: 31/05/2021</div>
-                                <img src="./img/tick.png" class="tick">
-                              </div>
-                        </div>
-                        <div class="card-ve">
-                            <img class="card-img-top1" src="./img/maqr.png" alt="Card image">
-                            <div class="card-body">
-                                <h4 class="card-title1">ALT20210501</h4>
-                                <div class="ticket-address">VÉ CỔNG</div>
-                                <div class="bagach">---</div>
-                                <div class="use-date">Ngày sử dụng: 31/05/2021</div>
-                                <img src="./img/tick.png" class="tick">
-                              </div>
-                        </div>
+
+                        <?php } ?>
                     </div>
                 </div>
                 <button type="button" class="btn-previous-ve"></button>
                 <button type="button" class="btn-next-ve"></button>
-                <div class="text-soluongve">Số lượng: 12 vé</div>
-                <div class="text-trang">Trang 1/3</div>
+                <div class="text-soluongve">Số lượng: <?php echo $soluongve ;?></div>
+                <div class="text-trang">Trang 1/1</div>
             </div>
             <button class="btn-taive"></button>
             <button class="btn-guiemail"></button>

@@ -29,10 +29,10 @@
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title">Thêm vé mới</h4>
-                    <form class="forms-sample" action="<?php echo './add_ticket_process.php'?> " method="POST" enctype="multipart/form-data">
+                    <form class="forms-sample" action="<?php echo '../forms/ticket/add_ticket_process.php'?> " method="POST" enctype="multipart/form-data">
                       <div class="form-group">
                         <label for="exampleInputName1">Mã vé</label>
-                        <input name = "code" value = "<?php echo $string_id_ticket;?>" class="form-control"  disabled>
+                        <input name="mave" value = "<?php echo $string_id_ticket;?>" class="form-control"  disabled>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group row">

@@ -25,7 +25,7 @@
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title">Chỉnh sửa tài khoản khách hàng</h4>
-                    <form class="forms-sample" action = "<?php echo 'edit_account_member_process.php'?>" method="POST" enctype="multipart/form-data">
+                    <form class="forms-sample" action = "<?php echo '../forms/account/edit_account_member_process.php'?>" method="POST" enctype="multipart/form-data">
                       <div class="form-group">
                         <input type="text" hidden="true" class="form-control" name ="id" value="<?php echo $edit_member_row[0]['id']; ?>">
                         <label for="exampleInputName1">Số thẻ visa</label>

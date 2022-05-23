@@ -1,5 +1,8 @@
 <?php
     include 'Database.php';
+    $ticket_type=$connect->prepare('SELECT * FROM ticket_type ');
+    $ticket_type->execute();
+    $row_ticket_type = $ticket_type->fetchALL();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -51,19 +54,30 @@
                     <img class="star" src="./img/star.png">
                     <p class="text-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
-                <form class="datve">
-                    <select>
-                        <option>Gói khách lẻ</option>
-                        <option>Gói gia đình</option>
-                        <option>Gói tập thể</option>
-                        <option>Gói dịch vụ</option>
-                    </select>
-                    <input class="soluong" type="number" placeholder="  Số lượng vé">
-                    <input class="ngaysudung" type="date" placeholder="  Ngày sử dụng">
-                    <input class="hoten" type="text" placeholder="  Họ và tên">
-                    <input class="sodienthoai" type="text" placeholder="  Số điện thoại">
-                    <input class="email" type="email" placeholder="  Địa chỉ email">
-                    <button type = "submit" class="nutdatve"><a href ="<?php echo $level.page_path?>Payment.php">Đặt vé</a></button>
+                <form class="datve" action="<?php echo 'Payment.php'?> " method="GET" enctype="multipart/form-data">
+                    <div class="col-md-6">
+                            <div class="form-group row">
+                            <div class="col-sm-9">
+                            <select class="form-control" name="loaive">
+                                <?php foreach ($row_ticket_type as $ticket_type)
+                                        {
+                                ?>
+                                    <option value = "<?php echo $ticket_type['id'];?>">
+                                    <?php if($ticket_type['status']==1){ 
+                                    echo $ticket_type['ticket_type_name'];}?></option>
+                                <?php
+                                        }
+                                ?>
+                                </select>
+                            </div>
+                            </div>
+                    </div>
+                    <input class="soluong" type="number" name = "soluong" placeholder="  Số lượng vé">
+                    <input class="ngaysudung" type="date" name="ngaysudung" placeholder="  Ngày sử dụng">
+                    <input class="hoten" type="text" name="hoten" placeholder="  Họ và tên">
+                    <input class="sodienthoai" type="text" name = "sodienthoai" placeholder="  Số điện thoại">
+                    <input class="email" type="email" name= "email" placeholder="  Địa chỉ email">
+                    <button type = "submit" class="nutdatve">Đặt vé</button>
                 </form>
             </div>
         </div>

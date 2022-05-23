@@ -1,5 +1,15 @@
 <?php
     include 'Database.php';
+
+    $loaive=$_GET['loaive'];
+    $soluong=$_GET['soluong'];
+    $ngaysudung=$_GET['ngaysudung'];
+    $hoten=$_GET['hoten'];
+    $sodienthoai=$_GET['sodienthoai'];
+    $email=$_GET['email'];
+    $monney=50000;
+    $total = 4*50000;
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,52 +34,52 @@
                 <img class="bang2" src="./img/bang2.png">
                 <img class="thongtinthanhtoan" src="./img/thongtinthanhtoan.png">
                 <img class="vecong-vegiadinh" src="./img/vecong-vegiadinh.png">
-                <form class="formthanhtoan">
+                <form class="formthanhtoan" action="<?php echo 'PaymentSuccess.php'?> " method="GET" enctype="multipart/form-data">
                     <div class="thongtinve">
                         <div class=" group-tt">
                             <label>Số tiền thanh toán</label>
-                            <input class="sotienthanhtoan-input" type="text" placeholder="  012458963257458">
+                            <input class="sotienthanhtoan-input" name="sotienthanhtoan" type="text" value="<?php echo number_format($total)." VNĐ"; ?>">
                         </div>
                         <div class=" group-slv">
                             <label>Số lượng vé</label>
-                            <input class="soluongve-input" type="text" placeholder="  4">  <div class="ve">vé</div>
+                            <input class="soluongve-input" name="soluongve" type="text" value="<?php echo $soluong; ?>"> <div class="ve">vé</div>
                         </div>
                         <div class="group-nsd">
                             <label>Ngày sử dụng</label>
-                            <input class="ngaysudung-input" value='12/4/2022'>
+                            <input class="ngaysudung-input" name="ngaysudung" value="<?php echo $ngaysudung; ?>">
                         </div>
                         <div class=" group-ttlh">
                             <label>Thông tin liên hệ</label>
-                            <input class="thongtinlienhe-input" type="text" placeholder="  Trần Hiếu Khoa">
+                            <input class="thongtinlienhe-input" name="thongtinlienhe" type="text" value="<?php echo $hoten; ?>">
                         </div>
                         <div class="group-dt">
                             <label>Điện thoại</label>
-                            <input class="dienthoai-input" type="number" placeholder="  0355501613">
+                            <input class="dienthoai-input" name="sodienthoai" type="number" value="<?php echo $sodienthoai; ?>">
                         </div>
                         <div class=" group-email">
                             <label>Email</label>
-                            <input class="email-input" type="text" placeholder="  tranhieukhoa442220@gmail.com">
+                            <input class="email-input" name="email" type="text" value="<?php echo $email; ?>">
                         </div>
                     </div>
                     <div class = thanhtoan>
                         <div class=" group1">
                             <label>Số thẻ</label>
-                            <input class="sothe" type="text" placeholder="  012458963257458">
+                            <input class="sothe" name="sothe" type="text" placeholder="Nhập số thẻ của bạn">
                         </div>
                         <div class=" group2">
                             <label>Họ tên chủ thẻ</label>
-                            <input class="hotenchuthe" type="text" placeholder="  Trần Hiếu Khoa">
+                            <input class="hotenchuthe" name="hotenthe" type="text" placeholder="  Trần Hiếu Khoa">
                         </div>
                         <div class="group3">
                             <label>Ngày hết hạn</label>
-                        <input class="ngayhethan" type="date" placeholder="  8/2030">
+                        <input class="ngayhethan" name="ngayhethan" type="date" placeholder="  8/2030">
                         </div>
                         <div class="group4">
                             <label>CVV/CVC</label>
-                            <input class="cvv-cvc" type="number" placeholder="  ****">
+                            <input class="cvv-cvc" name="cvv_cvc" type="number" placeholder="  ****">
                         </div>
                     </div>
-                    <button type = "submit" class="nutthanhtoan"><a href ="<?php echo $level.page_path?>PaymentSuccess.php">Thanh toán</a></button>
+                    <button type = "submit" class="nutthanhtoan">Thanh toán</button>
                 </form>
             </div>
         </div>
