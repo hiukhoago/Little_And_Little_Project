@@ -23,7 +23,7 @@
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Danh sách admin</h4>
-                  <a type="button" class="btn btn-success btn-rounded btn-fw"href="./add_account.php">Thêm tài khoản</a>  
+                  <a type="button" class="btn btn-success text-light btn-rounded btn-fw"href="./add_account.php">Thêm tài khoản</a>  
                   
                   <div class="table-responsive pt-3">
                     <table class="table table-bordered">
@@ -73,12 +73,12 @@
                           <td>
                           <?php echo $admin['email'];?>
                           </td>
-                          <td>
-                          <?php if($admin['status'] == 1){echo 'Hoạt động';} else {echo 'Không hoạt động';}?>
+                          <td class="text-center">
+                          <?php if($admin['status'] == 1){echo '<i class="fa fa-check" aria-hidden="true"></i>';}else{ echo '<i class="fa fa-times" aria-hidden="true"></i>';}?>
                           </td>
                           <td>
-                            <a type="button" class="btn btn-info btn-rounded btn-fw"href="<?php echo 'detail_account_admin.php?id='.$admin['id'];?> ">Detail</a>  
-                            <a type="button" class="btn btn-secondary btn-rounded btn-fw"href="<?php echo 'edit_account_admin.php?id='.$admin['id'];?>">Edit</a>  
+                            <a type="button" class="btn btn-info text-light btn-rounded btn-fw"href="<?php echo 'detail_account_admin.php?id='.$admin['id'];?> ">Chi tiết</a>  
+                            <a type="button" class="btn btn-secondary text-light btn-rounded btn-fw"href="<?php echo 'edit_account_admin.php?id='.$admin['id'];?>">Cập nhật</a>  
                           </td>
                         </tr>
                         <?php

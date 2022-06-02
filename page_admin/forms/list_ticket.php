@@ -30,7 +30,7 @@
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Danh sách vé</h4>
-                  <a type="button" class="btn btn-success btn-rounded btn-fw"href="./add_ticket.php">Thêm vé mới</a>  
+                  <a type="button" class="btn btn-success text-light btn-rounded btn-fw"href="./add_ticket.php">Thêm vé mới</a>  
                   <div class="table-responsive pt-3">
                     <table class="table table-bordered">
                       <thead>
@@ -79,11 +79,11 @@
                           <td>
                           <?php echo $ticket['date_use'];?>
                           </td>
-                          <td>
-                          <?php if($ticket['status']==1) {echo 'Đang sử dụng';}else{ echo 'Hết hạn sử dụng';}?>
+                          <td class="text-center">
+                          <?php if($ticket['status']==1) {echo '<i class="fa fa-check" aria-hidden="true"></i>';}else{ echo '<i class="fa fa-times" aria-hidden="true"></i>';}?>
                           </td>
                           <td> 
-                            <a type="button" class="btn btn-secondary btn-rounded btn-fw"href="<?php echo 'edit_ticket.php?id='.$ticket['id'];?>">Edit</a>  
+                            <a type="button" class="btn btn-info text-light btn-rounded btn-fw"href="<?php echo 'edit_ticket.php?id='.$ticket['id'];?>">Cập nhật</a>  
                           </td>
                         </tr>
                         <?php

@@ -23,7 +23,7 @@
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Danh sách các sự kiện</h4>
-                  <a type="button" class="btn btn-success btn-rounded btn-fw"href="./add_event.php">Thêm sự kiện mới</a>  
+                  <a type="button" class="btn btn-success text-light btn-rounded btn-fw"href="./add_event.php">Thêm sự kiện mới</a>  
                   <div class="table-responsive pt-3">
                     <table class="table table-bordered">
                       <thead>
@@ -76,8 +76,8 @@
                           <?php echo $event['ticket_price'];?>
                           </td>
                           <td>
-                            <a type="button" class="btn btn-info btn-rounded btn-fw"href="<?php echo '../../EventDetail.php?id='.$event['id'];?>"">Detail</a>  
-                            <a type="button" class="btn btn-secondary btn-rounded btn-fw"href="<?php echo 'edit_event.php?id='.$event['id'];?>">Edit</a>  
+                            <a type="button" class="btn btn-info text-light btn-rounded btn-fw"href="<?php echo '../../EventDetail.php?id='.$event['id'];?>">Chi tiết</a>  
+                            <a type="button" class="btn btn-secondary text-light btn-rounded btn-fw"href="<?php echo 'edit_event.php?id='.$event['id'];?>">Cập nhật</a>  
                           </td>
                         </tr>
                         <?php

@@ -81,7 +81,7 @@
                           <?php echo $member['CVV_CVC'];?>
                           </td>
                           <td>
-                            <a type="button" class="btn btn-secondary btn-rounded btn-fw"href="<?php echo 'edit_account_member.php?id='.$member['id'];?> ">Edit</a>  
+                            <a type="button" class="btn btn-info text-light btn-rounded btn-fw"href="<?php echo 'edit_account_member.php?id='.$member['id'];?> ">Cập nhật</a>  
                           </td>
                         </tr>
                         <?php

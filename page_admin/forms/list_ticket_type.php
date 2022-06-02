@@ -22,7 +22,7 @@
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Danh sách các loại vé</h4>
-                  <a type="button" class="btn btn-success btn-rounded btn-fw"href="./add_ticket_type.php">Thêm loại vé</a>
+                  <a type="button" class="btn btn-success text-light btn-rounded btn-fw"href="./add_ticket_type.php">Thêm loại vé</a>
                   <div class="table-responsive pt-3">
                     <table class="table table-bordered">
                       <thead>
@@ -59,11 +59,11 @@
                           <td>
                           <?php echo number_format( $ticket_type["ticket_type_price"],0)." VNĐ";?>
                           </td>
-                          <td>
-                          <?php if($ticket_type['status']==1) {echo 'Đang sử dụng';}else{ echo 'Hết hạn sử dụng';}?>
+                          <td class="text-center">
+                          <?php if($ticket_type['status']==1) {echo '<i class="fa fa-check" aria-hidden="true"></i>';}else{ echo '<i class="fa fa-times" aria-hidden="true"></i>';}?>
                           </td>
                           <td>
-                          <a type="button" class="btn btn-secondary btn-rounded btn-fw"href="<?php echo 'edit_ticket_type.php?id='.$ticket_type['id'];?>">Edit</a>
+                          <a type="button" class="btn btn-info text-light btn-rounded btn-fw"href="<?php echo 'edit_ticket_type.php?id='.$ticket_type['id'];?>">Cập nhật</a>
                           </td>
                         </tr>
                         <?php
