@@ -60,7 +60,7 @@
                       </div>
                       <div class="form-group">
                         <label for="exampleInputName1">Mô tả</label>
-                        <textarea type="text" name="mota" class="form-control"><?php echo $row_image[0]['describe']; ?></textarea>
+                        <textarea type="text" name="mota" class="form-control-des"><?php echo $row_image[0]['describe']; ?></textarea>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group row">

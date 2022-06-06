@@ -48,7 +48,7 @@
                       </div>
                       <div class="form-group">
                         <label for="exampleInputName1">Mô tả</label>
-                        <textarea type="text" name="mota" class="form-control" placeholder="Mô tả"></textarea>
+                        <textarea type="text" name="mota" class="form-control-des" placeholder="Mô tả"></textarea>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group row">

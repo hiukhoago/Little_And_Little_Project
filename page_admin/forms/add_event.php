@@ -63,15 +63,15 @@
                       </div>
                       <div class="form-group">
                         <label for="exampleInputName1">Đoạn mô tả thứ 1:</label>
-                        <textarea type="text" name="mota1" class="form-control" id="exampleInputName1" placeholder="Mô tả"></textarea>
+                        <textarea type="text" name="mota1" class="form-control-des"  placeholder="Mô tả" rows="10"></textarea>
                       </div>
                       <div class="form-group">
                         <label for="exampleInputName1">Đoạn mô tả thứ 2:</label>
-                        <textarea type="text" name="mota2" class="form-control" id="exampleInputName1" placeholder="Mô tả"></textarea>
+                        <textarea type="text" name="mota2" class="form-control-des"  placeholder="Mô tả" rows="10"></textarea>
                       </div>
                       <div class="form-group">
                         <label for="exampleInputName1">Đoạn mô tả thứ 3:</label>
-                        <textarea type="text" name="mota3" class="form-control" id="exampleInputName1" placeholder="Mô tả"></textarea>
+                        <textarea type="text" name="mota3" class="form-control-des" placeholder="Mô tả" rows="10"></textarea>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group row">

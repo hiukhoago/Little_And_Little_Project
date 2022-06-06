@@ -68,15 +68,15 @@
                       </div>
                       <div class="form-group">
                         <label for="exampleInputName1">Đoạn mô tả thứ 1:</label>
-                        <textarea type="text" name="mota1" class="form-control" ><?php echo $row_event[0]['describe_1'];?></textarea>
+                        <textarea type="text" name="mota1" class="form-control-des" ><?php echo $row_event[0]['describe_1'];?></textarea>
                       </div>
                       <div class="form-group">
                         <label for="exampleInputName1">Đoạn mô tả thứ 2:</label>
-                        <textarea type="text" name="mota2" class="form-control" ><?php echo $row_event[0]['describe_2'];?></textarea>
+                        <textarea type="text" name="mota2" class="form-control-des" ><?php echo $row_event[0]['describe_2'];?></textarea>
                       </div>
                       <div class="form-group">
                         <label for="exampleInputName1">Đoạn mô tả thứ 3:</label>
-                        <textarea type="text" name="mota3" class="form-control" ><?php echo $row_event[0]['describe_3'];?></textarea>
+                        <textarea type="text" name="mota3" class="form-control-des" ><?php echo $row_event[0]['describe_3'];?></textarea>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group row">

@@ -8,6 +8,12 @@ if(isset($_POST['add']))
     $giave = $_POST['giave']; 
     $trangthai = $_POST['trangthai']; 
 
+    if(!$tendiadiem||!$giave)
+    {
+        echo "Vui lòng nhập đầy đủ thông tin.";
+        exit(0);
+    }
+
     $add_ticket_sql = "INSERT INTO ticket_address (ticket_address_name, ticket_address_price, status )
                             VALUE (:tendiadiem, :giave,:trangthai)";
 
