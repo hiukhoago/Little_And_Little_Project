@@ -3,6 +3,9 @@
     $ticket_type=$connect->prepare('SELECT * FROM ticket_type ');
     $ticket_type->execute();
     $row_ticket_type = $ticket_type->fetchALL();
+    if(isset($_GET['message'])){
+        echo "<script>alert('".$_GET['message']."');</script>";
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -73,6 +76,7 @@
                             </div>
                     </div>
                     <input class="soluong" type="number" name = "soluong" placeholder="  Số lượng vé">
+
                     <input class="ngaysudung" type="date" name="ngaysudung" placeholder="  Ngày sử dụng">
                     <input class="hoten" type="text" name="hoten" placeholder="  Họ và tên">
                     <input class="sodienthoai" type="text" name = "sodienthoai" placeholder="  Số điện thoại">

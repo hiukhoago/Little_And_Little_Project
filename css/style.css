@@ -1,36 +1,44 @@
-*{
+* {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
     outline: none;
     box-sizing: border-box;
 }
-.body{
+
+.body {
     width: 1349px;
     height: 900px;
     background: radial-gradient(97% 60% at 50% 50%, #FFDB7E 0%, #FF7A00 100%);
     border-radius: 10px;
 }
+
+
 /*---------------------------------------------- TRANG CHỦ------------------------------------------- */
+
+
 /* ---------------------HEADER---------------- */
-.header{
+
+.header {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
     left: 0;
     z-index: 2;
-    height:80px;
-    box-shadow: 0 2px 10px rgba(0,0,0,.05);
+    height: 80px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .05);
     background: #ED7200;
-    border-radius:0px 0px 600px 600px/ 30px 30px ;
+    border-radius: 0px 0px 600px 600px/ 30px 30px;
 }
-.header_left a img{
+
+.header_left a img {
     position: absolute;
     width: 180px;
     left: 200px;
     top: 4px;
 }
-.header_middle nav{
+
+.header_middle nav {
     position: absolute;
     width: 500px;
     height: 42px;
@@ -40,40 +48,47 @@
     align-items: center;
     justify-content: space-around;
 }
-.nav .item a{
+
+.nav .item a {
     font-size: 18px;
     color: #eddbdb;
     padding: 3px 15px;
-    }
-.nav a:hover{
+}
+
+.nav a:hover {
     width: 80px;
     border-radius: 25px;
     text-decoration: none;
     border: 1px solid #ffffff;
     color: #fff;
 }
+
 .header_right {
     position: absolute;
-    top:30px;
-    right:130px;
+    top: 30px;
+    right: 130px;
     color: #fff;
 }
+
+
 /* ----------------------------------------------------MAIN---------------------------- */
+
 .main {
     position: absolute;
     width: 92%;
-    height:800px;
+    height: 800px;
     left: 4%;
-    top:47px;
+    top: 47px;
 }
-.background{
+
+.background {
     position: absolute;
-    top:0;
-    left:0;
-    right:0%;
+    top: 0;
+    left: 0;
+    right: 0%;
     background-image: url(../img//background.png);
     height: 708px;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: 1320px;
     border-bottom-right-radius: 50px;
     /* position: absolute;
@@ -85,101 +100,117 @@
     border-radius: 50px;
     object-position: 150px 0; */
 }
-.logoDamSen{
+
+.logoDamSen {
     position: absolute;
     left: 8%;
     top: 7%;
     width: 150px;
 }
-.kc1{
+
+.kc1 {
     position: absolute;
     width: 100px;
     left: 42%;
     top: 11%;
 }
-.kc2{
+
+.kc2 {
     position: absolute;
     width: 85px;
     left: 56%;
     top: 1%;
 }
-.bonduanho{
+
+.bonduanho {
     position: absolute;
     width: 500px;
     left: 700px;
     top: 0px;
 }
-.kc3{
+
+.kc3 {
     position: absolute;
     width: 100px;
     left: -2%;
     top: 33%;
 }
-.kc4{
+
+.kc4 {
     position: absolute;
     width: 100px;
     left: 35%;
     top: 87%;
 }
-.kc5{
+
+.kc5 {
     position: absolute;
     width: 100px;
     left: 92%;
     top: 83%;
 }
-.kc6{
+
+.kc6 {
     position: absolute;
     width: 120px;
     right: -5%;
     top: 38%;
 }
-.content{
+
+.content {
     position: absolute;
     width: 1040px;
     height: 465px;
     left: 130px;
     top: 200px;
 }
-.bang1{
+
+.bang1 {
     position: absolute;
     z-index: 0;
     width: 601px;
-    height:465px;
+    height: 465px;
     left: 0%;
     top: 0%;
 }
-.khungnoi{
+
+.khungnoi {
     position: absolute;
     width: 100px;
-    height:454px;
+    height: 454px;
     left: 55%;
 }
-.bang2{
+
+.bang2 {
     position: absolute;
     width: 400px;
-    height:465px;
+    height: 465px;
     left: 60%;
 }
-.nhotochong{
+
+.nhotochong {
     position: absolute;
-    z-index:1;
+    z-index: 1;
     width: 215px;
     left: -24px;
     top: 368px;
 }
-.vecuaban{
+
+.vecuaban {
     position: absolute;
     width: 220px;
     height: 65px;
     left: 710px;
     top: -10px;
 }
-.datve{
+
+.datve {
     position: absolute;
     left: 63%;
     top: 15%;
 }
-.datve select{
+
+.datve select {
     appearance: none;
     position: absolute;
     width: 330px;
@@ -194,7 +225,8 @@
     font-size: 14px;
     font-weight: 400;
 }
-.datve input{
+
+.datve input {
     background: #FFFFFF;
     box-shadow: inset -1px 3px 3px rgba(179, 91, 11, 0.5);
     border-radius: 16px;
@@ -205,7 +237,8 @@
     border: none;
     /* margin-left: 10px; */
 }
-.soluong{
+
+.soluong {
     appearance: none;
     position: absolute;
     width: 100px;
@@ -213,7 +246,8 @@
     top: 72px;
     left: 0px;
 }
-.ngaysudung{
+
+.ngaysudung {
     appearance: none;
     position: absolute;
     width: 170px;
@@ -221,28 +255,32 @@
     left: 120px;
     top: 72px;
 }
-.hoten{
+
+.hoten {
     position: absolute;
     width: 330px;
     height: 40px;
     left: 0px;
     top: 135px;
 }
-.sodienthoai{
+
+.sodienthoai {
     position: absolute;
     width: 330px;
     height: 40px;
     left: 0px;
     top: 200px;
 }
-.email{
+
+.email {
     position: absolute;
     width: 330px;
     height: 40px;
     left: 0px;
     top: 260px;
 }
-.nutdatve{
+
+.nutdatve {
     position: absolute;
     left: 35px;
     top: 315px;
@@ -251,9 +289,10 @@
     border: none;
     border-radius: 10px;
     color: white;
-    background-color:red;
+    background-color: red;
 }
-.paragraph{
+
+.paragraph {
     position: absolute;
     left: 5%;
     right: 50%;
@@ -264,227 +303,263 @@
     color: #23221F;
     opacity: 0.7;
 }
-.text0{
+
+.text0 {
     position: absolute;
     height: 40px;
     left: 100px;
     top: 180px;
 }
-.text0 p{
+
+.text0 p {
     display: inline-block;
     font-weight: 700;
     font-size: 16px;
     opacity: 0.7;
 }
-.text1{
+
+.text1 {
     position: absolute;
     height: 40px;
     left: 100px;
     top: 220px;
 }
-.text1 p{
+
+.text1 p {
     display: inline-block;
     font-weight: 700;
     font-size: 16px;
     opacity: 0.7;
 }
-.text2{
+
+.text2 {
     position: absolute;
     height: 40px;
     left: 100px;
     top: 260px;
 }
-.text2 p{
+
+.text2 p {
     display: inline-block;
     font-weight: 700;
     font-size: 16px;
     opacity: 0.7;
 }
-.text3{
+
+.text3 {
     position: absolute;
     height: 40px;
     left: 100px;
     top: 300px;
 }
-.text3 p{
+
+.text3 p {
     display: inline-block;
     font-weight: 700;
     font-size: 16px;
     opacity: 0.7;
 }
+
+
 /* ---------------------------------------------SỰ KIỆN-----------------------------------------------*/
-.sukiennoibat{
+
+.sukiennoibat {
     position: absolute;
-    top:43px;
-    left:430px;
-    max-width:500px;
-    max-height:70px;
+    top: 43px;
+    left: 430px;
+    max-width: 500px;
+    max-height: 70px;
     z-index: 1;
 }
-.phaobong{
+
+.phaobong {
     position: absolute;
     z-index: 0;
-    top:-10px;
-    left:23px;
-    max-width:1220px;
-    max-height:800px;
+    top: -10px;
+    left: 23px;
+    max-width: 1220px;
+    max-height: 800px;
 }
-.flag-trai{
+
+.flag-trai {
     position: absolute;
-    top:28px;
-    left:-55px;
-    max-width:435px;
-    max-height:180px;
+    top: 28px;
+    left: -55px;
+    max-width: 435px;
+    max-height: 180px;
     z-index: 1;
 }
-.flag-phai{
+
+.flag-phai {
     position: absolute;
-    right:-54px;
-    top:-60px;
-    max-width:500px;
-    max-height:242px;
+    right: -54px;
+    top: -60px;
+    max-width: 500px;
+    max-height: 242px;
     z-index: 1;
 }
-.list-event{
+
+.list-event {
     position: relative;
     left: 8%;
     top: 25%;
     width: 1060px;
     overflow: hidden;
 }
-.card-deck-event{
+
+.card-deck-event {
     display: flex;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     margin-right: 0px;
     margin-left: -15px;
-    height:390px;
+    height: 390px;
 }
-.card-deck-event .card-event{
+
+.card-deck-event .card-event {
     -ms-flex: 1 0 0%;
     flex: 1 0 0%;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 15px;
-    background-color:white;
+    background-color: white;
     border-radius: 20px;
-    width:230px
+    width: 230px
 }
-.card-title1{
+
+.card-title1 {
     font-weight: 700;
     font-size: 26px;
 }
-.card-event img{
+
+.card-event img {
     border-radius: 20px 20px 0px 0px;
 }
-.event-date1{
+
+.event-date1 {
     display: inline-block;
     font-weight: 500;
     font-size: 14px;
     color: #575757;
     margin: 3px 0 0 3px;
 }
-.calendar-icon1{
+
+.calendar-icon1 {
     width: 20px;
     height: 20px;
 }
-.card-body a{
+
+.card-body a {
     position: absolute;
     margin: 5px 0px;
     border: none;
     border-radius: 10px;
     color: white;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: 190px;
     height: 35px;
     width: 140px;
     background-image: url(../img/button-xemchitiet.png);
     background-position: center;
 }
-.event-price1{
+
+.event-price1 {
     font-weight: 700;
     font-size: 26px;
     color: #FA7D09;
     margin-top: 8px;
 }
-.btn-previous{
+
+.btn-previous {
     position: absolute;
-    top:50%;
-    left:3%;
+    top: 50%;
+    left: 3%;
     border: none;
     border-radius: 10px;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: 43px;
     height: 35px;
     width: 40px;
     background-image: url(../img/button-previous.png);
     background-position: center;
-    z-index:1;
+    z-index: 1;
 }
-.btn-next{
+
+.btn-next {
     position: absolute;
-    top:50%;
-    right:2%;
+    top: 50%;
+    right: 2%;
     border: none;
     border-radius: 10px;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: 43px;
     height: 35px;
     width: 40px;
     background-image: url(../img/button-next.png);
     background-position: center;
 }
+
+
 /* -------------------------------------------------CHI TIẾT SỰ KIỆN------------------------------------*/
-.sukien{
+
+.sukien {
     position: absolute;
-    top:65px;
-    left:40%;
-    max-width:400px;
-    max-height:50px;
+    top: 65px;
+    left: 40%;
+    max-width: 400px;
+    max-height: 50px;
     z-index: 1;
-    font-size:50px;
-    color:white;
-    font-weight:bold;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
     font-family: cursive;
 }
-.bangchitiet{
+
+.bangchitiet {
     position: absolute;
     left: 8%;
     top: 22%;
     width: 1065px;
     height: 510px;
 }
-.content-event{
+
+.content-event {
     position: absolute;
     left: 12%;
     right: 5%;
     top: 29%;
 }
-.infom{
-    margin-top:20px;
+
+.infom {
+    margin-top: 20px;
     line-height: 35px;
 }
-.content-event-left .anh1{
+
+.content-event-left .anh1 {
     width: 300px;
 }
-.event-date{
+
+.event-date {
     display: inline-block;
     font-weight: 500;
     font-size: 16px;
     color: #575757;
     margin: 3px 0 0 3px;
 }
-.event-address{
+
+.event-address {
     color: #575757;
     font-weight: 500;
     font-size: 16px;
 }
-.event-price{
+
+.event-price {
     font-weight: 700;
     font-size: 30px;
     color: #FA7D09;
 }
-.event-detail-text{
+
+.event-detail-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
@@ -493,64 +568,76 @@
     text-align: justify;
     color: #000000;
 }
-.content-event-right{
+
+.content-event-right {
     position: absolute;
     top: 0%;
     left: 32%;
 }
-.content-event-right-ss1{
+
+.content-event-right-ss1 {
     width: 200px;
-    height:200px;
+    height: 200px;
 }
-.content-event-right-ss2{
+
+.content-event-right-ss2 {
     position: absolute;
     top: 0%;
     left: 110%;
     width: 200px;
-    height:200px;
+    height: 200px;
 }
-.content-event-right-ss3{
+
+.content-event-right-ss3 {
     position: absolute;
     top: 0%;
     left: 220%;
     width: 200px;
-    height:200px;
+    height: 200px;
 }
-.anhchitiet-sk{
+
+.anhchitiet-sk {
     margin: 10px 0px 10px 0px;
     width: 200px;
     border-radius: 5px;
 }
+
+
 /* ----------------------------------------------------LIÊN HỆ--------------------------------------------*/
-.text-lienhe{
+
+.text-lienhe {
     position: absolute;
-    top:50px;
-    left:570px;
-    max-width:400px;
-    max-height:60px;
+    top: 50px;
+    left: 570px;
+    max-width: 400px;
+    max-height: 60px;
 }
-.thangtocnau{
+
+.thangtocnau {
     position: absolute;
-    z-index:1;
+    z-index: 1;
     width: 230px;
     left: -30px;
     top: 215px;
 }
-.lienhe{
+
+.lienhe {
     position: absolute;
     width: 1020px;
     height: 500px;
     left: 170px;
     top: 130px;
 }
-.form-contact{
+
+.form-contact {
     position: absolute;
     width: 808px;
     height: 138px;
     left: 50px;
     top: 130px;
 }
-.form-contact input{
+
+.form-contact input {
     background: #FFFFFF;
     box-shadow: inset -1px 3px 2px rgba(179, 91, 11, 0.5);
     border-radius: 10px;
@@ -562,11 +649,13 @@
     padding-left: 10px;
     opacity: 0.8;
 }
-.bang-lienhe-1 img{
+
+.bang-lienhe-1 img {
     width: 650px;
     height: 500px;
 }
-.paragraph-lienhe{
+
+.paragraph-lienhe {
     position: absolute;
     width: 580px;
     height: 120px;
@@ -576,32 +665,38 @@
     font-size: 15px;
     opacity: 0.8;
 }
-.group-contact1{
+
+.group-contact1 {
     position: absolute;
     left: 0px;
     top: 0px;
 }
-.input-ten{
+
+.input-ten {
     position: absolute;
     width: 220px;
 }
-.input-email{
+
+.input-email {
     position: absolute;
     left: 240px;
     width: 320px;
 }
-.input-sdt{
+
+.input-sdt {
     position: absolute;
     top: 50px;
     width: 220px;
 }
-.input-diachi{
+
+.input-diachi {
     position: absolute;
     left: 240px;
     top: 50px;
     width: 320px;
 }
-.input-loinhan{
+
+.input-loinhan {
     position: absolute;
     width: 560px;
     height: 130px;
@@ -619,7 +714,8 @@
     padding-top: 10px;
     opacity: 0.8;
 }
-.nutguilienhe{
+
+.nutguilienhe {
     position: absolute;
     left: 145px;
     top: 280px;
@@ -628,55 +724,62 @@
     border: none;
     border-radius: 10px;
     color: white;
-    background-color:red;
+    background-color: red;
 }
-.group-contact2{
+
+.group-contact2 {
     position: absolute;
     left: 0px;
     top: 10px;
 }
 
-.bang-lienhe-2 img{
+.bang-lienhe-2 img {
     width: 350px;
     height: 155px;
     left: 665px;
 }
-.bang-lienhe-2 .text-content img{
+
+.bang-lienhe-2 .text-content img {
     position: absolute;
-    top:50px;
-    left:68%;
+    top: 50px;
+    left: 68%;
     width: 50px;
-    height:50px;
+    height: 50px;
 }
-.bang-lienhe-3 img{
+
+.bang-lienhe-3 img {
     position: absolute;
     width: 350px;
     height: 155px;
-    top:177px;
+    top: 177px;
     left: 665px;
 }
-.bang-lienhe-3 .text-content img{
+
+.bang-lienhe-3 .text-content img {
     position: absolute;
-    top:220px;
-    left:68%;
+    top: 220px;
+    left: 68%;
     width: 50px;
-    height:50px;
+    height: 50px;
 }
-.bang-lienhe-4 img{
+
+.bang-lienhe-4 img {
     position: absolute;
     width: 350px;
     height: 155px;
-    top:350px;
+    top: 350px;
     left: 665px;
 }
-.bang-lienhe-4 .text-content img{
+
+.bang-lienhe-4 .text-content img {
     position: absolute;
-    top:400px;
-    left:68%;
+    top: 400px;
+    left: 68%;
     width: 50px;
-    height:50px;
+    height: 50px;
 }
-.text-content .text-title{
+
+.text-content .text-title {
     font-weight: 600;
     font-size: 19px;
     display: flex;
@@ -684,7 +787,8 @@
     text-align: center;
     color: #12265A;
 }
-.text-content-smaller1{
+
+.text-content-smaller1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -694,7 +798,8 @@
     top: 30px;
     font-size: 14px;
 }
-.text-content-smaller2{
+
+.text-content-smaller2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -704,7 +809,8 @@
     top: 43%;
     font-size: 14px;
 }
-.text-content-smaller3{
+
+.text-content-smaller3 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -714,55 +820,65 @@
     top: 80%;
     font-size: 14px;
 }
+
+
 /* ---------------------------------------------------THANH TOÁN----------------------------------------------------------------------*/
-.text-thanhtoan{
+
+.text-thanhtoan {
     position: absolute;
-    top:70px;
-    left:460px;
-    max-width:460px;
-    max-height:65px;
+    top: 70px;
+    left: 460px;
+    max-width: 460px;
+    max-height: 65px;
 }
-.nhotocvang{
+
+.nhotocvang {
     position: absolute;
-    z-index:1;
+    z-index: 1;
     width: 215px;
     left: -26px;
     top: 230px;
 }
-.thongtinthanhtoan{
+
+.thongtinthanhtoan {
     position: absolute;
     width: 300px;
     height: 65px;
     left: 675px;
     top: -10px;
 }
-.vecong-vegiadinh{
+
+.vecong-vegiadinh {
     position: absolute;
     width: 300px;
     height: 65px;
     left: 75px;
     top: -10px;
 }
-.thanhtoan{
+
+.thanhtoan {
     position: absolute;
     left: 63%;
     top: 15%;
     width: 331px;
 }
-.thongtinve{
+
+.thongtinve {
     position: absolute;
     left: 8%;
     top: 15%;
     width: 460px;
 }
-.thanhtoan label{
+
+.thanhtoan label {
     margin-top: -60px;
     margin-left: 5px;
     font-size: 14px;
     font-weight: 700;
     line-height: 115px;
 }
-.thanhtoan input{
+
+.thanhtoan input {
     background: #FFFFFF;
     box-shadow: inset -1px 3px 3px rgba(179, 91, 11, 27%);
     border-radius: 10px;
@@ -773,13 +889,15 @@
     border: none;
     margin-left: 10px;
 }
-.thongtinve label{
+
+.thongtinve label {
     margin-top: 0px;
     margin-left: 5px;
     font-size: 14px;
     font-weight: 700;
 }
-.thongtinve input{
+
+.thongtinve input {
     background: #FFFFFF;
     box-shadow: inset -1px 3px 3px rgba(179, 91, 11, 27%);
     border-radius: 10px;
@@ -790,57 +908,68 @@
     border: none;
     display: block;
 }
+
 .group-tt {
     position: absolute;
     top: 0px;
     left: 0px;
-    height:30px;
+    height: 30px;
 }
+
 .group-slv {
     position: absolute;
     top: 0px;
     left: 200px;
-    height:30px;
+    height: 30px;
 }
-.soluongve-input{
+
+.soluongve-input {
     width: 60px;
 }
-.ve{
+
+.ve {
     position: absolute;
     top: 40px;
     left: 66px;
 }
+
 .group-nsd {
     position: absolute;
     top: 0px;
     left: 320px;
-    height:30px;
+    height: 30px;
 }
+
 .group-ttlh {
     position: absolute;
     top: 80px;
     left: 0px;
-    height:30px;
+    height: 30px;
 }
-.thongtinlienhe-input{
+
+.thongtinlienhe-input {
     width: 260px;
 }
+
 .group-dt {
     position: absolute;
     top: 160px;
     left: 0px;
-    height:30px;
+    height: 30px;
 }
+
 .group-email {
     position: absolute;
     top: 240px;
     left: 0px;
-    height:30px;
+    height: 30px;
 }
-.email-input{
+
+.email-input {
     width: 260px;
 }
-.cvv-cvc{
+
+.cvv-cvc {
     appearance: none;
     position: absolute;
     width: 100px;
@@ -848,7 +977,8 @@
     top: 260px;
     left: 0px;
 }
-.ngayhethan{
+
+.ngayhethan {
     appearance: none;
     position: absolute;
     width: 250px;
@@ -856,21 +986,24 @@
     left: 0px;
     top: 190px;
 }
-.hotenchuthe{
+
+.hotenchuthe {
     position: absolute;
     width: 330px;
     height: 40px;
     left: 0px;
     top: 110px;
 }
-.sothe{
+
+.sothe {
     position: absolute;
     width: 330px;
     height: 40px;
     left: 0px;
     top: 30px;
 }
-.nutthanhtoan{
+
+.nutthanhtoan {
     position: absolute;
     left: 700px;
     top: 380px;
@@ -879,142 +1012,160 @@
     border: none;
     border-radius: 10px;
     color: white;
-    background-color:red;
+    background-color: red;
 }
+
+
 /* -----------------------------------------------THANH TOÁN THÀNH CÔNG---------------------------------*/
-.thanhtoanthanhcong{
+
+.thanhtoanthanhcong {
     position: absolute;
-    top:65px;
-    left:345px;
-    max-width:630px;
-    max-height:70px;
+    top: 65px;
+    left: 345px;
+    max-width: 630px;
+    max-height: 70px;
 }
-.thangdeokinh{
+
+.thangdeokinh {
     position: absolute;
-    z-index:1;
+    z-index: 1;
     width: 230px;
     left: -33px;
     top: 250px;
 }
-.bangthanhtoanthanhcong{
+
+.bangthanhtoanthanhcong {
     position: absolute;
     left: 12%;
     top: 22%;
     width: 1045px;
     height: 500px;
 }
-.list-ve{
+
+.list-ve {
     position: absolute;
     left: 20%;
     top: 27%;
-    width: 850px;
 }
-.card-deck-ve{
+
+.card-deck-ve {
     display: flex;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     margin-right: 0px;
     margin-left: -15px;
-    height:390px;
+    height: 390px;
 }
-.card-img-top1{
+
+.card-img-top1 {
     width: 120px;
     margin: 30px 45px 20px 45px;
 }
-.card-deck-ve .card-ve{
+
+.card-deck-ve .card-ve {
     -ms-flex: 1 0 0%;
     flex: 1 0 0%;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 15px;
-    background-color:white;
+    background-color: white;
     border-radius: 20px;
-    height:400px;
+    height: 400px;
     width: 100px;
 }
-.ticket-address{
+
+.ticket-address {
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
     color: #FFC226;
     text-align: center;
 }
-.bagach{
+
+.bagach {
     font-weight: 900;
     font-size: 25px;
     line-height: 10px;
     text-align: center;
 }
-.use-date{
-    font-size:13px;
+
+.use-date {
+    font-size: 13px;
     line-height: 45px;
     margin-left: 5px;
 }
-.tick{
+
+.tick {
     margin-top: 10px;
     margin-left: 60px;
 }
-.btn-previous-ve{
+
+.btn-previous-ve {
     position: absolute;
-    top:55%;
-    left:14%;
+    top: 55%;
+    left: 14%;
     border: none;
     border-radius: 10px;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: 43px;
     height: 35px;
     width: 40px;
     background-image: url(../img/button-previous.png);
     background-position: center;
-    z-index:1;
+    z-index: 1;
 }
-.btn-next-ve{
+
+.btn-next-ve {
     position: absolute;
-    top:55%;
-    right:6%;
+    top: 55%;
+    right: 6%;
     border: none;
     border-radius: 10px;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: 43px;
     height: 35px;
     width: 40px;
     background-image: url(../img/button-next.png);
     background-position: center;
 }
-.text-soluongve{
+
+.text-soluongve {
     position: absolute;
-    top:85%;
-    left:20%;
+    top: 85%;
+    left: 20%;
     font-weight: 600;
 }
-.text-trang{
+
+.text-trang {
     position: absolute;
-    top:85%;
-    left:84%;
+    top: 85%;
+    left: 84%;
     font-weight: 500;
     font-size: 14px;
     opacity: 0.5;
 }
-.btn-taive{
+
+.btn-taive {
     position: absolute;
-    top:94%;
-    right:47%;
+    top: 94%;
+    right: 47%;
     border: none;
     border-radius: 5px;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: 130px;
     height: 33px;
     width: 130px;
     background-image: url(../img/btn-taive.png);
     background-position: center;
 }
-.btn-guiemail{
+
+.btn-guiemail {
     position: absolute;
-    top:94%;
-    right:35%;
+    top: 94%;
+    right: 35%;
     border: none;
     border-radius: 5px;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: 130px;
     height: 33px;
     width: 130px;

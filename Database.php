@@ -166,22 +166,22 @@
     //CREATE table BILL.
 
         // $sql= "CREATE TABLE `dam_sen2`.`bills` ( `id` INT UNSIGNED NOT NULL AUTO_INCREMENT, 
-        // `id_member` INT UNSIGNED NOT NULL,
+        // `fullname_buy` VARCHAR(50)  NULL DEFAULT NULL,
+        // `amount` INT(11) NULL DEFAULT NULL,
         // `date_create` DATE NULL DEFAULT NULL,
         // `date_delete` DATE NULL DEFAULT NULL,
         // `date_update` DATE NULL DEFAULT NULL,
         // `total_price` INT(11) NULL DEFAULT NULL,
         // `status` VARCHAR(1) NULL DEFAULT NULL,
-        // PRIMARY KEY (`id`),
-        // CONSTRAINT `fk_members` FOREIGN KEY (`id_member`) REFERENCES `members` (`id`)
+        // PRIMARY KEY (`id`)
         // ) ENGINE = InnoDB;";
         // $connect->exec($sql);
 
     //INSERT TABLE BILL
 
-        // $sql = "INSERT INTO `bills` (`id_member`,`date_create`,`date_delete`,`date_update`,`total_price`,`status`)
-        // VALUE ('1','2025-04-04',NULL,NULL,'500000',1),
-        //         ('1','2025-04-05',NULL,NULL,'150000',1)";
+        // $sql = "INSERT INTO `bills` (`fullname_buy`,`amount`,`date_create`,`date_delete`,`date_update`,`total_price`,`status`)
+        // VALUE ('Trần Hiếu Khoa','4','2025-04-04',NULL,NULL,'500000',1),
+        //         ('Trần Hiếu Khoa','2','2025-04-05',NULL,NULL,'150000',1)";
         // $connect->exec($sql);
 
 
